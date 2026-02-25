@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Option 3 – Asymmetric Stack Hero</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Comic Sans MS', 'Chalkboard SE', cursive;
+      background: #fff;
+      color: #333;
+    }
+
+    .legend {
+      position: fixed;
+      top: 12px;
+      right: 12px;
+      background: #fff;
+      border: 1px dashed #999;
+      padding: 10px 14px;
+      font-size: 11px;
+      z-index: 9999;
+      line-height: 1.8;
+    }
+    .legend-dot { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: middle; }
+    .dot-new { background: #FF9800; }
+    .dot-reuse { background: #4CAF50; }
+
+    .comp-wrap { position: relative; display: inline-block; }
+    .comp-wrap-block { position: relative; display: block; }
+    .badge {
+      position: absolute;
+      top: -9px;
+      right: -4px;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-size: 10px;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      color: #fff;
+      white-space: nowrap;
+      z-index: 100;
+    }
+    .badge-new   { background: #FF9800; }
+    .badge-reuse { background: #4CAF50; }
+
+    .option-label {
+      background: #f5f5f5;
+      border-bottom: 2px dashed #ccc;
+      padding: 10px 20px;
+      font-size: 13px;
+      color: #666;
+    }
+    .option-label strong { color: #333; font-size: 15px; }
+
+    /* ── NAVBAR ── */
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 32px;
+      border-bottom: 2px solid #333;
+    }
+    .logo-box {
+      width: 28px; height: 28px;
+      border: 2px solid #333;
+      background: #eee;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 11px; font-weight: bold;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 8px; }
+    .logo-text { font-size: 18px; font-weight: bold; }
+    .nav-center { display: flex; gap: 28px; font-size: 14px; color: #444; }
+    .nav-center span { border-bottom: 1px dashed #999; cursor: pointer; padding-bottom: 2px; }
+    .nav-actions { display: flex; align-items: center; gap: 14px; }
+    .btn-ghost { font-size: 14px; color: #444; cursor: pointer; font-family: inherit; background: none; border: none; }
+    .btn-solid {
+      padding: 9px 18px;
+      border: 2px solid #333;
+      background: #333;
+      color: #fff;
+      font-size: 14px;
+      font-family: inherit;
+      cursor: pointer;
+    }
+
+    /* ── HERO WRAPPER ── */
+    .hero-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Top large row: text left (wider) + illustration right */
+    .hero-top {
+      display: flex;
+      min-height: 440px;
+      border-bottom: 2px solid #333;
+    }
+
+    /* Text column – 55% */
+    .text-col {
+      width: 55%;
+      padding: 56px 48px 48px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-right: 2px solid #333;
+    }
+    .text-upper {}
+    .hero-eyebrow {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #888;
+      border: 1px dashed #bbb;
+      display: inline-block;
+      padding: 4px 12px;
+      margin-bottom: 20px;
+    }
+    .hero-headline {
+      font-size: 44px;
+      font-weight: bold;
+      line-height: 1.15;
+      color: #111;
+      margin-bottom: 20px;
+    }
+    .hero-sub {
+      font-size: 15px;
+      color: #555;
+      line-height: 1.6;
+      max-width: 420px;
+      margin-bottom: 32px;
+    }
+    .hero-ctas { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 13px 24px;
+      border: 2px solid #333;
+      background: #333;
+      color: #fff;
+      font-size: 14px;
+      font-family: inherit;
+      cursor: pointer;
+    }
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 13px 24px;
+      border: 2px dashed #333;
+      background: #fff;
+      color: #333;
+      font-size: 14px;
+      font-family: inherit;
+      cursor: pointer;
+    }
+
+    /* Feature pills row */
+    .text-lower {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .feature-pill {
+      border: 2px dashed #888;
+      padding: 5px 14px;
+      font-size: 12px;
+      color: #555;
+      background: #fafafa;
+    }
+
+    /* Illustration column */
+    .illus-col {
+      flex: 1;
+      position: relative;
+      background: #e4e4e4;
+      overflow: hidden;
+    }
+    /* dot grid */
+    .illus-col::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image: radial-gradient(circle, #bbb 1px, transparent 1px);
+      background-size: 22px 22px;
+      opacity: 0.5;
+    }
+    .illus-placeholder {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 340px;
+      height: 240px;
+      border: 2px dashed #999;
+      background: #d8d8d8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #888;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    /* ── BOTTOM STRIP: Notification cards row ── */
+    .notif-strip {
+      display: flex;
+      gap: 0;
+      border-bottom: 2px solid #333;
+      overflow: hidden;
+    }
+    .notif-panel {
+      flex: 1;
+      padding: 20px 24px;
+      border-right: 2px dashed #ccc;
+    }
+    .notif-panel:last-child { border-right: none; }
+    .notif-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .notif-icon {
+      width: 14px; height: 14px;
+      border: 2px solid #333;
+      border-radius: 50%;
+      background: #eee;
+      display: inline-block;
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+    .notif-type { font-size: 10px; font-weight: bold; text-transform: uppercase; color: #555; }
+    .notif-time { font-size: 10px; color: #999; }
+    .notif-body { font-size: 13px; font-weight: bold; color: #222; margin-bottom: 6px; }
+    .notif-count { font-size: 11px; color: #888; }
+    .notif-channel-badge {
+      display: inline-block;
+      font-size: 10px;
+      border: 1px solid #bbb;
+      padding: 2px 8px;
+      color: #666;
+      margin-top: 8px;
+    }
+
+    /* ── MARQUEE ── */
+    .marquee-bar {
+      border-bottom: 2px solid #333;
+      padding: 14px 0;
+      overflow: hidden;
+      white-space: nowrap;
+      background: #fafafa;
+    }
+    .marquee-inner {
+      display: inline-flex;
+      gap: 48px;
+      animation: scroll 18s linear infinite;
+    }
+    @keyframes scroll {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .marquee-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+      color: #444;
+    }
+    .marquee-sep {
+      width: 16px; height: 16px;
+      border: 2px solid #555;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 9px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div class="legend">
+  <div><span class="legend-dot dot-reuse"></span> [REUSE] – existing component</div>
+  <div><span class="legend-dot dot-new"></span> [NEW] – component to create</div>
+</div>
+
+<div class="option-label">
+  <strong>Option 3 – Asymmetric Stack Hero</strong> &nbsp;|&nbsp;
+  Wider text column + illustration. Notification cards moved to a visible horizontal strip below the hero instead of floating overlays.
+</div>
+
+<!-- ════════════════════════════════════════ NAVBAR -->
+<nav class="navbar">
+  <div class="comp-wrap">
+    <span class="badge badge-new" title="src/components/Logo.tsx">[NEW] Logo</span>
+    <div class="nav-logo">
+      <div class="logo-box">C</div>
+      <span class="logo-text">Caide</span>
+    </div>
+  </div>
+  <div class="nav-center">
+    <span>Features</span>
+    <span>Pricing</span>
+    <span>Contact us</span>
+  </div>
+  <div class="nav-actions">
+    <div class="comp-wrap">
+      <span class="badge badge-new">[NEW] Button (ghost)</span>
+      <button class="btn-ghost">Log in</button>
+    </div>
+    <div class="comp-wrap">
+      <span class="badge badge-new">[NEW] Button (solid)</span>
+      <button class="btn-solid">Start for free ›</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════════ HERO TOP ROW -->
+<div class="hero-wrapper">
+  <div class="hero-top">
+
+    <!-- TEXT COLUMN -->
+    <div class="text-col">
+      <div class="text-upper">
+        <div class="comp-wrap">
+          <span class="badge badge-new" title="src/components/HeroEyebrow.tsx">[NEW] HeroEyebrow</span>
+          <div class="hero-eyebrow">AI-Powered Outreach Platform</div>
+        </div>
+
+        <div class="comp-wrap-block" style="position:relative;">
+          <span class="badge badge-new" title="src/components/HeroHeadline.tsx">[NEW] HeroHeadline</span>
+          <h1 class="hero-headline">Get Hot Leads Without Breaking a Sweat</h1>
+        </div>
+
+        <div class="comp-wrap-block" style="position:relative;">
+          <span class="badge badge-new" title="src/components/HeroSubtext.tsx">[NEW] HeroSubtext</span>
+          <p class="hero-sub">Caide is your AI-powered virtual campaign manager, built to make sure cold outreach doesn't feel cold.</p>
+        </div>
+
+        <div class="hero-ctas">
+          <div class="comp-wrap">
+            <span class="badge badge-new">[NEW] Button (primary)</span>
+            <button class="btn-primary">Try for free →</button>
+          </div>
+          <div class="comp-wrap">
+            <span class="badge badge-new">[NEW] Button (secondary)</span>
+            <button class="btn-secondary">Watch demo ▶</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="comp-wrap-block" style="position:relative; margin-top:32px;">
+        <span class="badge badge-new" title="src/components/FeaturePills.tsx">[NEW] FeaturePills</span>
+        <div class="text-lower">
+          <div class="feature-pill">✓ GDPR compliant</div>
+          <div class="feature-pill">✓ No credit card required</div>
+          <div class="feature-pill">✓ Free 14-day trial</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ILLUSTRATION COLUMN -->
+    <div class="illus-col">
+      <div class="comp-wrap-block" style="position:relative;">
+        <span class="badge badge-new" style="top:50px; right:12px;" title="src/components/HeroIllustration.tsx">[NEW] HeroIllustration</span>
+        <div class="illus-placeholder">
+          [ Illustration: Person relaxing on sofa with laptop &amp; dog · 340×240 ]
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ════════════════════════════════════════ NOTIFICATION STRIP -->
+  <div class="comp-wrap-block" style="position:relative;">
+    <span class="badge badge-new" style="top:4px; right:8px;" title="src/components/NotificationStrip.tsx">[NEW] NotificationStrip</span>
+    <div class="notif-strip">
+
+      <div class="notif-panel">
+        <!-- NEW COMPONENT: NotificationCard -->
+        <div class="notif-header">
+          <span><span class="notif-icon"></span><span class="notif-type">New Email</span></span>
+          <span class="notif-time">Now</span>
+        </div>
+        <div class="notif-body">Re: Acme's LATAM expansion...</div>
+        <div class="notif-count">99+ more notifications</div>
+        <div class="notif-channel-badge">Email</div>
+      </div>
+
+      <div class="notif-panel">
+        <div class="notif-header">
+          <span><span class="notif-icon"></span><span class="notif-type">New Message</span></span>
+          <span class="notif-time">Now</span>
+        </div>
+        <div class="notif-body">We'd be interested in hearing mo...</div>
+        <div class="notif-count">99+ more notifications</div>
+        <div class="notif-channel-badge">LinkedIn</div>
+      </div>
+
+      <div class="notif-panel">
+        <div class="notif-header">
+          <span><span class="notif-icon"></span><span class="notif-type">Meeting Booked</span></span>
+          <span class="notif-time">Now</span>
+        </div>
+        <div class="notif-body">Confirmed: Tuesday at 2PM with...</div>
+        <div class="notif-count">99+ more notifications</div>
+        <div class="notif-channel-badge">Calendar</div>
+      </div>
+
+      <div class="notif-panel" style="background:#f5f5f5; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:6px;">
+        <div style="font-size:28px; font-weight:bold; color:#111;">127</div>
+        <div style="font-size:12px; color:#666; text-align:center;">Leads engaged<br>this week</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════ MARQUEE -->
+  <div class="comp-wrap-block" style="position:relative;">
+    <span class="badge badge-new" style="top:4px; right:8px;" title="src/components/MarqueeTicker.tsx">[NEW] MarqueeTicker</span>
+    <div class="marquee-bar">
+      <div class="marquee-inner">
+        <div class="marquee-item"><div class="marquee-sep">C</div> GDPR compliant outreach</div>
+        <div class="marquee-item"><div class="marquee-sep">C</div> Built for agencies, solopreneurs, and lean teams</div>
+        <div class="marquee-item"><div class="marquee-sep">C</div> Effortless outreach automation</div>
+        <div class="marquee-item"><div class="marquee-sep">C</div> AI-powered cold email sequences</div>
+        <div class="marquee-item"><div class="marquee-sep">C</div> Smart lead scoring &amp; segmentation</div>
+        <div class="marquee-item"><div class="marquee-sep">C</div> GDPR compliant outreach</div>
+        <div class="marquee-item"><div class="marquee-sep">C</div> Built for agencies, solopreneurs, and lean teams</div>
+        <div class="marquee-item"><div class="marquee-sep">C</div> Effortless outreach automation</div>
+        <div class="marquee-item"><div class="marquee-sep">C</div> AI-powered cold email sequences</div>
+        <div class="marquee-item"><div class="marquee-sep">C</div> Smart lead scoring &amp; segmentation</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
