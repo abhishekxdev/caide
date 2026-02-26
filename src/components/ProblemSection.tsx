@@ -30,13 +30,13 @@ export default function ProblemSection() {
       {/* Headline */}
       <div className="text-center max-w-[720px] mb-10 md:mb-12">
         <h2 className="font-heading font-extrabold text-[34px] sm:text-[42px] lg:text-[54px] leading-[1.1] text-navy mb-4 md:mb-5">
-          Tired of Outreach that doesn't work?
-        </h2>
-        <p className="font-body text-[15px] md:text-[17px] leading-relaxed text-navy/60 max-w-[580px] mx-auto">
-          Traditional outreach demands you're a salesperson, strategist, and
-          copywriter all at once. It's expensive, exhausting, and impossible to
-          measure.
-        </p>
+            Tired of Dog Care that Stresses You Out?
+          </h2>
+          <p className="font-body text-[15px] md:text-[17px] leading-relaxed text-navy/60 max-w-[580px] mx-auto">
+            Managing your dog's health demands you're a vet, scheduler, and
+            nutritionist all at once. It's exhausting, expensive, and impossible
+            to keep track of.
+          </p>
       </div>
 
       {/* Card */}
@@ -52,23 +52,23 @@ export default function ProblemSection() {
           {/* Left */}
           <div className="md:w-[45%]">
             <h3 className="font-heading font-extrabold text-[26px] md:text-[32px] leading-tight text-navy">
-              Expensive &<br />Ineffective
+              Expensive &<br />Stressful
             </h3>
           </div>
 
           {/* Right */}
           <div className="md:w-[55%] flex flex-col gap-6">
             <p className="font-body text-[14px] md:text-[15px] leading-relaxed text-navy/75">
-              The old way drains budgets and delivers little in return. Teams
-              juggle a mess of tools just to send one generic email that gets
-              ignored. It's a bloated, time-sucking process built for busywork,
-              not results.
+              The old way drains your energy and delivers anxiety in return. Dog
+              owners juggle vet visits, walkers, groomers, and trainers just to
+              keep one pup healthy. It's a fragmented, time-consuming mess built
+              for chaos, not care.
             </p>
 
             <div className="relative w-fit">
               <div className="absolute top-2 left-2 w-full h-full rounded-sm bg-lavender-dark/70" />
               <button className="relative flex items-center gap-2.5 bg-navy hover:bg-navy-light text-white font-body font-semibold text-[15px] px-7 py-3.5 rounded-sm transition-all duration-200 hover:-translate-y-0.5 hover:-translate-x-0.5 group">
-                Try for free
+                Try free today
                 <svg className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>

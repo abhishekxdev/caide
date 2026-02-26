@@ -36,11 +36,11 @@ export default function SolutionSection() {
       {/* Headline */}
       <div className="text-center max-w-[680px] mb-10 md:mb-12">
         <h2 className="font-heading font-extrabold text-[36px] sm:text-[44px] lg:text-[58px] leading-[1.08] text-navy mb-4 md:mb-5">
-          From chaos to conversations
+          From chaos to calm
         </h2>
         <p className="font-body text-[15px] md:text-[17px] leading-relaxed text-navy/60 max-w-[600px] mx-auto">
-          Caide simplifies your sales stack, writes emails that don't suck, and gets you more
-          conversations. All without blowing your budget or burning out your team.
+          Woofly simplifies your dog care routine, schedules appointments that actually work, and
+          keeps your pup healthy. All without draining your wallet or burning you out.
         </p>
       </div>
 
@@ -49,13 +49,13 @@ export default function SolutionSection() {
         <div className="relative z-10 flex flex-col md:flex-row gap-6 md:gap-8 px-6 sm:px-10 pt-10 pb-0">
           <div className="md:w-[45%]">
             <h3 className="font-heading font-extrabold text-[24px] md:text-[30px] leading-tight text-navy">
-              Cutting-Edge AI,<br />Always Improving
+              Smarter AI,<br />Happier Dogs
             </h3>
           </div>
           <div className="md:w-[55%] flex flex-col gap-5">
             <p className="font-body text-[13px] md:text-[14px] leading-relaxed text-navy/65 max-w-[320px]">
-              Model-agnostic AI trained for persuasive, human-like emails. Always learning, always
-              evolving, always using the best tool for the job.
+              Breed-aware AI trained on thousands of dog health profiles. Always learning your pup's
+              needs, always evolving, always giving you the best advice for the job.
             </p>
             <OffsetButton label="Try for free" />
           </div>

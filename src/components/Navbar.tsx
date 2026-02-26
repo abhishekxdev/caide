@@ -10,14 +10,17 @@ export default function Navbar() {
       <div className="max-w-[1280px] mx-auto px-5 md:px-8 h-16 flex items-center justify-between gap-4">
         {/* Logo */}
         <div className="flex items-center gap-2.5 shrink-0">
-          <div className="w-8 h-8 bg-navy flex items-center justify-center rounded-sm">
-            <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="0" y="0" width="8" height="3" fill="white" />
-              <rect x="0" y="5.5" width="18" height="3" fill="white" />
-              <rect x="10" y="11" width="8" height="3" fill="white" />
+          <div className="w-8 h-8 bg-navy flex items-center justify-center rounded-full">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              {/* Paw print */}
+              <circle cx="9" cy="6" r="2.2" fill="white" />
+              <circle cx="15" cy="6" r="2.2" fill="white" />
+              <circle cx="5.5" cy="10.5" r="1.8" fill="white" />
+              <circle cx="18.5" cy="10.5" r="1.8" fill="white" />
+              <path d="M12 22c-4 0-7-2.5-7-6.5 0-2.5 1.5-4.5 4-5.5h6c2.5 1 4 3 4 5.5 0 4-3 6.5-7 6.5z" fill="white" />
             </svg>
           </div>
-          <span className="font-heading font-700 text-xl text-navy tracking-tight">Caide</span>
+          <span className="font-heading font-700 text-xl text-navy tracking-tight">Woofly</span>
         </div>
 
         {/* Nav Links — desktop */}
@@ -39,7 +42,7 @@ export default function Navbar() {
             Log in
           </button>
           <button className="flex items-center gap-2 bg-navy hover:bg-navy-light text-white font-body font-semibold text-[14px] px-5 py-2.5 rounded-sm transition-all duration-200 hover:shadow-lg hover:-translate-y-px group">
-            Start for free
+            Get started free
             <svg className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
@@ -81,7 +84,7 @@ export default function Navbar() {
               Log in
             </button>
             <button className="flex items-center justify-center gap-2 bg-navy text-white font-body font-semibold text-[14px] px-5 py-3 rounded-sm w-full">
-              Start for free
+              Get started free
             </button>
           </div>
         </div>

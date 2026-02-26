@@ -1,4 +1,4 @@
-const features = ['✓ GDPR compliant', '✓ No credit card required', '✓ Free 14-day trial'];
+const features = ['✓ GDPR compliant', '✓ No credit card required', '✓ Free 14-day trial for dog lovers'];
 
 function DotGrid() {
   return (
@@ -22,25 +22,25 @@ export default function HeroSection() {
           {/* Eyebrow */}
           <div className="inline-flex w-fit">
             <span className="border border-dashed border-navy/40 px-4 py-1.5 font-body font-semibold text-[11px] tracking-[0.15em] uppercase text-navy/60">
-              AI-Powered Outreach Platform
+              AI-Powered Dog Care Platform
             </span>
           </div>
 
           {/* Headline */}
           <h1 className="font-heading font-extrabold text-[36px] sm:text-[44px] lg:text-[56px] leading-[1.08] text-navy max-w-[520px]">
-            Get Hot Leads Without Breaking a Sweat
+            Give Your Dog the Best Care Without Breaking a Sweat
           </h1>
 
           {/* Subtext */}
           <p className="font-body text-[15px] md:text-[16px] leading-relaxed text-navy/70 max-w-[440px]">
-            Caide is your AI-powered virtual campaign manager, built to make
-            sure cold outreach doesn't feel cold.
+            Woofly is your AI-powered dog care companion, built to make sure
+            your furry friend gets the love, health, and happiness they deserve.
           </p>
 
           {/* CTAs */}
           <div className="flex items-center gap-4 flex-wrap mt-1">
             <button className="group flex items-center gap-2.5 bg-navy hover:bg-navy-light text-white font-body font-semibold text-[15px] px-7 py-3.5 rounded-sm transition-all duration-200 hover:shadow-xl hover:-translate-y-0.5">
-              Try for free
+              Try free today
               <svg className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>

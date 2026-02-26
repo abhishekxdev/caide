@@ -112,17 +112,17 @@ function OffsetButton({ label, shadowColor }: { label: string; shadowColor: stri
 }
 
 const withoutItems = [
-  'Juggling 5 different tools just to send one email',
-  'Generic outreach that gets ignored',
-  'Hours wasted on manual research',
-  'Guesswork in targeting the right people',
+  'Juggling 5 different apps just to book one walker',
+  'Generic care advice that ignores your dog\'s breed',
+  'Hours wasted on manual research and phone calls',
+  'Guesswork in finding trustworthy professionals',
 ];
 
 const withItems = [
-  'One platform for sourcing, research, writing, and sending',
-  'Hyper-personalized emails that actually get replies',
-  'Deep research done for you at scale',
-  'Clear targeting based on real data',
+  'One platform for booking, tracking, paying, and messaging',
+  'Hyper-personalised care based on your dog\'s profile',
+  'Deep professional vetting done for you at scale',
+  'Smart matching based on your dog\'s real needs',
 ];
 
 export default function GlowUpSection() {
@@ -131,11 +131,11 @@ export default function GlowUpSection() {
       {/* Headline */}
       <div className="text-center max-w-[640px] mb-10 md:mb-12">
         <h2 className="font-heading font-extrabold text-[36px] sm:text-[44px] lg:text-[56px] leading-[1.1] text-navy mb-4 md:mb-5">
-          The Outreach Glow-Up
+          The Dog Care Glow-Up
         </h2>
         <p className="font-body text-[14px] md:text-[16px] leading-relaxed text-navy/60">
-          Researching, copywriting, sending, managing replies; Caide simplifies every step
-          and delivers results your old setup never could.
+          Scheduling, tracking, communicating, paying — Woofly simplifies every step and delivers
+          results your old scattered setup never could.
         </p>
       </div>
 
@@ -149,8 +149,8 @@ export default function GlowUpSection() {
               <img src="https://i.pravatar.cc/56?u=without-caide" alt="Without Caide avatar" style={{ width: '56px', height: '56px', objectFit: 'cover' }} />
             </div>
             <div>
-              <h3 className="font-heading font-extrabold text-[20px] md:text-[22px] text-navy mb-2">Without Caide</h3>
-              <p className="font-body text-[13px] text-navy/50 leading-snug max-w-[260px]">The old way of doing outreach that just doesn't scale</p>
+              <h3 className="font-heading font-extrabold text-[20px] md:text-[22px] text-navy mb-2">Without Woofly</h3>
+              <p className="font-body text-[13px] text-navy/50 leading-snug max-w-[260px]">The old way of managing dog care that just doesn't scale</p>
             </div>
             <div className="flex flex-col gap-3.5">
               {withoutItems.map((item) => <CheckItem key={item} text={item} variant="cross" />)}
@@ -172,8 +172,8 @@ export default function GlowUpSection() {
           <div className="px-6 sm:px-8 pt-8 pb-0 flex flex-col gap-5 flex-1 relative z-10">
             <DalmatianAvatar />
             <div>
-              <h3 className="font-heading font-extrabold text-[20px] md:text-[22px] text-navy mb-2">With Caide</h3>
-              <p className="font-body text-[13px] text-navy/60 leading-snug max-w-[260px]">Everything you need to scale outreach without the stress</p>
+              <h3 className="font-heading font-extrabold text-[20px] md:text-[22px] text-navy mb-2">With Woofly</h3>
+              <p className="font-body text-[13px] text-navy/60 leading-snug max-w-[260px]">Everything you need to give your dog world-class care without the stress</p>
             </div>
             <div className="flex flex-col gap-3.5">
               {withItems.map((item) => <CheckItem key={item} text={item} variant="check" />)}

@@ -199,10 +199,10 @@ export default function SkyCtaSection() {
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center text-center px-6 sm:px-8 max-w-[680px] pb-16 md:pb-20 pt-16">
         <h2 className="font-heading font-extrabold text-[28px] sm:text-[36px] lg:text-[52px] leading-[1.15]" style={{ color: '#2A1858' }}>
-          You don't need to be a sales expert to be a sales expert.
+          You don't need to be a vet to give your dog expert-level care.
         </h2>
         <p className="font-heading font-extrabold text-[22px] sm:text-[28px] lg:text-[40px] leading-[1.2] mt-6 md:mt-8" style={{ color: '#2A1858' }}>
-          80% of cold emails get ignored. Caide<InlineDog />makes sure yours won't.
+          80% of dog owners struggle to find reliable care. Woofly<InlineDog />makes sure you won't.
         </p>
         <OffsetButton label="Try free for 14 days" />
       </div>

@@ -47,8 +47,8 @@ function ProspectCard() {
           </div>
         </div>
         <div>
-          <p className="font-heading font-bold text-[15px] text-navy leading-tight">Jessica Moore</p>
-          <p className="font-body text-[12px] text-muted">CMO, Hooli</p>
+          <p className="font-heading font-bold text-[15px] text-navy leading-tight">Sarah Mitchell</p>
+          <p className="font-body text-[12px] text-muted">Dog Walker, London</p>
         </div>
       </div>
       <div className="h-px bg-gray-100 mb-4" />
@@ -117,11 +117,11 @@ export default function ProspectSection() {
       <div className="w-full md:w-1/2 flex flex-col justify-center px-8 sm:px-14 lg:px-20 py-14 md:py-20" style={{ background: '#CC9EF5' }}>
         <div className="max-w-[380px] flex flex-col gap-6">
           <h2 className="font-heading font-extrabold text-[32px] sm:text-[38px] lg:text-[44px] leading-[1.1] text-navy">
-            Identify Your Ideal Prospects
+            Find Your Perfect Dog Carer
           </h2>
           <p className="font-body text-[15px] leading-relaxed text-navy/65">
-            No guesswork. Caide helps you define your Ideal Customer Profile using real data and
-            business goals, so you know exactly who to target for maximum ROI.
+            No guesswork. Woofly matches you with the ideal walker, vet, or groomer using your
+            dog's real profile and location — so you always know your pup is in great hands.
           </p>
           <OffsetButton label="Try For Free" />
         </div>

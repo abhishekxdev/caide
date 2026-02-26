@@ -45,11 +45,11 @@ export default function FeatureCardsSection() {
             <CloudsDecoration />
             <div className="relative z-10 px-7 pb-8 pt-24">
               <h3 className="font-heading font-extrabold text-[20px] md:text-[24px] leading-tight text-navy mb-3">
-                Effortless Campaign<br />Management
+                Effortless Care<br />Scheduling
               </h3>
               <p className="font-body text-[13px] leading-relaxed text-navy/70 max-w-[280px]">
-                From lead sourcing and ICP refinement to automated follow-ups and mailbox
-                management, Caide handles the complexity behind the scenes.
+                From vet bookings and walker matching to automated reminders and health logs,
+                Woofly handles the complexity behind the scenes.
               </p>
             </div>
           </div>
@@ -58,11 +58,11 @@ export default function FeatureCardsSection() {
           <div className={`${cardBase} min-h-[300px] md:min-h-[360px] flex flex-col`} style={{ background: '#F5C418' }}>
             <div className="px-7 pt-7 pb-2 z-10 relative">
               <h3 className="font-heading font-extrabold text-[20px] md:text-[22px] leading-tight text-navy mb-2">
-                Enhanced ROI
+                More Time, Less Worry
               </h3>
               <p className="font-body text-[13px] text-navy/70 leading-relaxed max-w-[240px]">
-                Caide takes care of the annoying busywork so your team can focus on closing deals
-                and growing faster.
+                Woofly takes care of the annoying admin so you can focus on belly rubs, walkies,
+                and making memories with your dog.
               </p>
             </div>
             <div className="flex-1 flex items-end justify-center pb-0 relative">
@@ -80,11 +80,11 @@ export default function FeatureCardsSection() {
           }} />
           <div className="relative z-10 flex flex-col gap-5 px-6 sm:px-10 py-8 md:py-10 md:w-[45%]">
             <h3 className="font-heading font-extrabold text-[24px] md:text-[30px] leading-tight text-navy">
-              Personalized,<br />Relevant Emails
+              Personalised,<br />Breed-Aware Plans
             </h3>
             <p className="font-body text-[13px] md:text-[14px] text-navy/70 leading-relaxed max-w-[320px]">
-              Caide researches every prospect and writes context-rich messages that feel personal,
-              just like a top-performing sales rep would.
+              Woofly studies every dog's breed, age, weight, and history to build care plans that
+              feel tailored — just like a top-performing vet would recommend.
             </p>
             <OffsetButton label="Book a demo" />
           </div>

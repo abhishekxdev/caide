@@ -1,13 +1,13 @@
 import { useState } from 'react';
 
 const faqs = [
-  { q: 'How is Caide different from other email outreach tools?', a: "Caide works like a skilled team member, handling the details of campaign creation and execution while keeping you firmly in control. Unlike other tools, it requires no technical setup, API keys, or complex integrations. It's built to make high-performing outreach accessible to everyone." },
-  { q: 'How does Caide find and qualify leads?', a: 'Caide scans multiple data sources to identify prospects that match your Ideal Customer Profile. It enriches each contact with verified info — title, company size, revenue, location — before passing them to your outreach pipeline.' },
-  { q: "What if I don't know my Ideal Customer Profile yet?", a: "No problem. Caide guides you through defining your ICP using your goals, industry, and target outcomes. You can refine it over time as Caide learns from the results of your campaigns." },
-  { q: "How does Caide ensure my emails won't end up in spam?", a: 'Caide follows best practices for deliverability: warm-up schedules, sending limits, SPF/DKIM alignment checks, and personalisation signals that inbox providers favour. Your domain health is always front of mind.' },
-  { q: 'Can I review or approve emails before they go out?', a: "Absolutely. Caide shows you every email before it's sent. You can edit, approve, or reject any message. You're always in control of what goes out under your name." },
-  { q: 'Does Caide work with my CRM?', a: "Yes. Caide integrates with popular CRMs including HubSpot, Salesforce, and Pipedrive. Lead data, replies, and campaign outcomes sync automatically so your team never misses a beat." },
-  { q: 'Who is Caide built for?', a: 'Caide is built for agencies, solopreneurs, consultants, and lean sales teams who want enterprise-grade outreach without hiring a dedicated SDR or juggling a dozen tools.' },
+  { q: 'How is Woofly different from other pet care apps?', a: "Woofly works like a dedicated dog care concierge, handling everything from booking and scheduling to health tracking and professional vetting — while keeping you firmly in control. Unlike other apps, it requires no complex setup, and it's built to make expert-level dog care accessible to every owner." },
+  { q: 'How does Woofly find and vet dog care professionals?', a: 'Woofly scans multiple trusted sources to identify walkers, vets, and groomers near you. It enriches each profile with verified reviews, certifications, insurance status, and availability — before presenting only the best matches for your dog.' },
+  { q: "What if I'm not sure what care my dog needs?", a: "No problem. Woofly guides you through building a care plan based on your dog's breed, age, weight, and lifestyle. You can refine it over time as Woofly learns more about your pup's unique personality and preferences." },
+  { q: "How does Woofly ensure the safety of my dog?", a: 'Woofly follows strict vetting standards: background checks, insurance verification, first-aid certification checks, and GPS-tracked walks with live updates. Your dog\'s safety is always front of mind.' },
+  { q: 'Can I review and approve bookings before they\'re confirmed?', a: "Absolutely. Woofly shows you every booking detail before it's confirmed. You can approve, reschedule, or cancel any appointment. You're always in control of who cares for your dog." },
+  { q: 'Does Woofly integrate with my vet\'s system?', a: "Yes. Woofly connects with popular vet platforms and can store your dog's complete health history in one place. Vet notes, vaccination records, and appointment outcomes sync automatically so you never miss a detail." },
+  { q: 'Who is Woofly built for?', a: 'Woofly is built for busy dog owners, multi-dog households, and pet care businesses who want professional-grade dog management without juggling a dozen different apps or missing important health milestones.' },
 ];
 
 function FAQItem({ question, answer, isOpen, onToggle }: { question: string; answer: string; isOpen: boolean; onToggle: () => void }) {
@@ -46,8 +46,8 @@ function ContactCard() {
         backgroundSize: '18px 18px',
       }} />
       <div className="relative z-10">
-        <p className="font-heading font-extrabold text-[17px] text-navy mb-2">Have more questions?</p>
-        <p className="font-body text-[13px] text-navy/65 leading-snug mb-5">Don't hesitate to get in touch, we're just a click away.</p>
+        <p className="font-heading font-extrabold text-[17px] text-navy mb-2">Still have questions?</p>
+        <p className="font-body text-[13px] text-navy/65 leading-snug mb-5">Our dog-loving team is just a click away — we're always happy to help.</p>
         <div className="relative w-fit" style={{ isolation: 'isolate' }}>
           <div className="absolute top-2 left-2 w-full h-full rounded-sm" style={{ background: '#9EA8DC', zIndex: 0 }} />
           <button className="relative flex items-center gap-2 bg-navy hover:bg-navy-light text-white font-body font-semibold text-[13px] px-5 py-2.5 rounded-sm transition-all duration-200 hover:-translate-y-0.5 hover:-translate-x-0.5 group" style={{ zIndex: 1 }}>

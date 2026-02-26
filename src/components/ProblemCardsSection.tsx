@@ -66,10 +66,10 @@ export default function ProblemCardsSection() {
             <StripesDecoration />
             <div className="absolute bottom-0 left-0 right-0 px-7 pb-8 z-10 bg-gradient-to-t from-navy via-navy/95 to-transparent pt-16">
               <h3 className="font-heading font-extrabold text-[22px] md:text-[26px] leading-tight text-white mb-2">
-                Spammy & Damaging
+                Missed Care & Anxiety
               </h3>
               <p className="font-body text-[13px] md:text-[14px] text-white/70 leading-relaxed max-w-[280px]">
-                Sloppy cold emails don't just bounce; they burn bridges and hurt your brand.
+                Forgotten vet visits and unreliable walkers don't just inconvenience — they put your dog's health at risk.
               </p>
             </div>
           </div>
@@ -78,10 +78,10 @@ export default function ProblemCardsSection() {
           <div className={`${cardBase} min-h-[300px] md:min-h-[360px] flex flex-col`} style={{ background: '#9EA8DC' }}>
             <div className="px-7 pt-7 pb-4">
               <h3 className="font-heading font-extrabold text-[20px] md:text-[22px] leading-tight text-navy mb-2">
-                Generic Messaging,<br />Zero Impact
+                Generic Care,<br />Zero Results
               </h3>
               <p className="font-body text-[13px] text-navy/70 leading-relaxed max-w-[240px]">
-                Most AI email tools generate lifeless copy that prospects instantly delete.
+                One-size-fits-all advice ignores your dog's breed, age, and personality — delivering zero real benefit.
               </p>
             </div>
             <div className="flex-1 relative flex items-end justify-center px-4 pb-2">
@@ -97,10 +97,10 @@ export default function ProblemCardsSection() {
         <div className={`${cardBase} flex flex-col md:flex-row items-center gap-6 md:gap-8 px-6 sm:px-10 py-8 md:py-10 min-h-[220px] md:min-h-[260px]`} style={{ background: '#DDD0FF' }}>
           <div className="flex flex-col gap-5 w-full md:w-[45%]">
             <h3 className="font-heading font-extrabold text-[26px] md:text-[32px] leading-tight text-navy">
-              Wastes Your<br />Valuable Time
+              Wastes Your<br />Precious Time
             </h3>
             <p className="font-body text-[13px] md:text-[14px] text-navy/70 leading-relaxed max-w-[320px]">
-              Manually sourcing leads and crafting messages steals hours from your team.
+              Manually researching vets, booking walkers, and tracking health records steals hours from your day.
             </p>
             <OffsetButton label="Book a demo" />
           </div>

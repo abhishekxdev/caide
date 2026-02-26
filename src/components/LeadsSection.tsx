@@ -142,11 +142,11 @@ function CRMMockup() {
               <circle cx="6.5" cy="6.5" r="5" stroke="#6B7280" strokeWidth="1.5" />
               <path d="M10.5 10.5l3.5 3.5" stroke="#6B7280" strokeWidth="1.5" strokeLinecap="round" />
             </svg>
-            <span className="font-body text-[12px] text-gray-500">Moore</span>
+            <span className="font-body text-[12px] text-gray-500">Search carers...</span>
           </div>
           <div className="flex flex-col gap-1">
             <ProspectRow avatarUrl="https://i.pravatar.cc/28?u=prospect-row-1" />
-            <ProspectRow avatarUrl="https://i.pravatar.cc/28?u=jessica-moore-cmo" name="Jessica Moore" role="CMO, Hooli" isHighlighted />
+            <ProspectRow avatarUrl="https://i.pravatar.cc/28?u=jessica-moore-cmo" name="Sarah Mitchell" role="Dog Walker · ⭐ 4.9" isHighlighted />
             <ProspectRow avatarUrl="https://i.pravatar.cc/28?u=prospect-row-3" />
             <ProspectRow avatarUrl="https://i.pravatar.cc/28?u=prospect-row-4" />
             <ProspectRow avatarUrl="https://i.pravatar.cc/28?u=prospect-row-5" />
@@ -179,11 +179,11 @@ export default function LeadsSection() {
       <div className="w-full md:w-1/2 flex flex-col justify-center px-8 sm:px-14 lg:px-20 py-14 md:py-20" style={{ background: '#D4AAFF' }}>
         <div className="max-w-[400px] flex flex-col gap-6">
           <h2 className="font-heading font-extrabold text-[32px] sm:text-[38px] lg:text-[46px] leading-[1.1] text-navy">
-            Source and Enrich Quality Leads Automatically
+            Book and Track Quality Care Automatically
           </h2>
           <p className="font-body text-[15px] leading-relaxed text-navy/65">
-            Caide pulls leads from trusted sources and enriches them with verified, detailed info.
-            No more outdated contacts. Just accurate, high-value prospects ready for outreach.
+            Woofly pulls vetted professionals from trusted sources and enriches them with verified
+            reviews. No more unreliable carers. Just trusted, experienced hands ready for your pup.
           </p>
           <OffsetButton label="Try For Free" />
         </div>

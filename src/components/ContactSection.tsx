@@ -143,7 +143,7 @@ export default function ContactSection() {
             Get in touch
           </h2>
           <p className="font-body text-[15px] md:text-[16px] leading-relaxed text-navy/55">
-            Don't hesitate to get in touch, we're<br className="hidden sm:block" /> just a click away.
+            Our dog-loving team is here to help.<br className="hidden sm:block" /> We're just a click away.
           </p>
         </div>
 
@@ -153,11 +153,11 @@ export default function ContactSection() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <FieldLabel>First name</FieldLabel>
-              <input type="text" className={inputCls} placeholder="What should we call you?" />
+              <input type="text" className={inputCls} placeholder="Your name" />
             </div>
             <div>
               <FieldLabel>Email address</FieldLabel>
-              <input type="email" className={inputCls} placeholder="we're@your.service" />
+              <input type="email" className={inputCls} placeholder="you@example.com" />
             </div>
           </div>
 
@@ -166,11 +166,12 @@ export default function ContactSection() {
             <FieldLabel>What can we help you with?</FieldLabel>
             <div className="relative">
               <select className={`${inputCls} appearance-none pr-12 cursor-pointer`} defaultValue="">
-                <option value="" disabled>What brings you here?</option>
+                <option value="" disabled>How can we help your pup?</option>
                 <option value="demo">Request a demo</option>
                 <option value="pricing">Pricing enquiry</option>
+                <option value="walker">Become a dog walker</option>
+                <option value="vet">Partner as a vet or groomer</option>
                 <option value="support">Support</option>
-                <option value="partnership">Partnership</option>
                 <option value="other">Other</option>
               </select>
               <svg className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none"
@@ -185,7 +186,7 @@ export default function ContactSection() {
           <div>
             <FieldLabel>Can you provide us with a little message? (Optional)</FieldLabel>
             <textarea className={`${inputCls} resize-none`} rows={4}
-              placeholder="Let us know what's on your mind, we'd love to hear from you!" />
+              placeholder="Tell us about your dog and what you need — we'd love to hear from you!" />
           </div>
 
           <MockRecaptcha />
