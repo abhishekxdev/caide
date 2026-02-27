@@ -1,48 +1,18 @@
-function RunningDog() {
+function ContentWaveIcon() {
   return (
-    <svg viewBox="0 0 200 140" width="180" height="126" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Running dalmatian dog">
-      <path d="M162 55 Q178 38 185 28" stroke="#1A103C" strokeWidth="5" strokeLinecap="round" fill="none" />
-      <ellipse cx="125" cy="72" rx="45" ry="25" fill="white" stroke="#1A103C" strokeWidth="2.5" />
-      <ellipse cx="110" cy="62" rx="9" ry="6" fill="#1A103C" />
-      <ellipse cx="138" cy="78" rx="7" ry="5" fill="#1A103C" />
-      <ellipse cx="118" cy="82" rx="5" ry="4" fill="#1A103C" />
-      <path d="M85 60 Q78 50 80 42" stroke="white" strokeWidth="16" strokeLinecap="round" fill="none" />
-      <path d="M85 60 Q78 50 80 42" stroke="#1A103C" strokeWidth="2.5" strokeLinecap="round" fill="none" />
-      <circle cx="75" cy="38" r="18" fill="white" stroke="#1A103C" strokeWidth="2.5" />
-      <ellipse cx="82" cy="33" rx="6" ry="4.5" fill="#1A103C" />
-      <path d="M65 28 Q52 30 50 42 Q52 50 62 46 Q70 42 68 30 Z" fill="white" stroke="#1A103C" strokeWidth="2" />
-      <circle cx="70" cy="36" r="3.5" fill="#1A103C" /><circle cx="71.2" cy="35" r="1.2" fill="white" />
-      <ellipse cx="62" cy="44" rx="4" ry="3" fill="#1A103C" />
-      <path d="M60 47 Q62 53 64 47" stroke="#E05080" strokeWidth="2.5" strokeLinecap="round" fill="none" />
-      <path d="M75 50 Q82 56 90 54" stroke="#3B82F6" strokeWidth="3" strokeLinecap="round" fill="none" />
-      <path d="M95 90 Q88 108 80 118" stroke="white" strokeWidth="9" strokeLinecap="round" fill="none" />
-      <path d="M95 90 Q88 108 80 118" stroke="#1A103C" strokeWidth="2.5" strokeLinecap="round" fill="none" />
-      <path d="M108 93 Q110 112 118 120" stroke="white" strokeWidth="9" strokeLinecap="round" fill="none" />
-      <path d="M108 93 Q110 112 118 120" stroke="#1A103C" strokeWidth="2.5" strokeLinecap="round" fill="none" />
-      <path d="M150 88 Q160 108 155 120" stroke="white" strokeWidth="9" strokeLinecap="round" fill="none" />
-      <path d="M150 88 Q160 108 155 120" stroke="#1A103C" strokeWidth="2.5" strokeLinecap="round" fill="none" />
-      <path d="M162 80 Q178 100 175 118" stroke="white" strokeWidth="9" strokeLinecap="round" fill="none" />
-      <path d="M162 80 Q178 100 175 118" stroke="#1A103C" strokeWidth="2.5" strokeLinecap="round" fill="none" />
-      <ellipse cx="79" cy="120" rx="7" ry="4" fill="white" stroke="#1A103C" strokeWidth="2" />
-      <ellipse cx="119" cy="121" rx="7" ry="4" fill="white" stroke="#1A103C" strokeWidth="2" />
-      <ellipse cx="154" cy="121" rx="7" ry="4" fill="white" stroke="#1A103C" strokeWidth="2" />
-      <ellipse cx="175" cy="119" rx="7" ry="4" fill="white" stroke="#1A103C" strokeWidth="2" />
-    </svg>
-  );
-}
-
-function PlantArches() {
-  return (
-    <svg viewBox="0 0 260 90" width="240" height="83" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <path d="M10 85 Q40 20 70 85" stroke="#1A103C" strokeWidth="2" fill="none" strokeLinecap="round" />
-      <path d="M40 28 Q40 16 32 10 M40 28 Q40 16 48 10" stroke="#1A103C" strokeWidth="1.5" fill="none" />
-      <circle cx="32" cy="8" r="4" fill="none" stroke="#1A103C" strokeWidth="1.5" />
-      <circle cx="48" cy="8" r="4" fill="none" stroke="#1A103C" strokeWidth="1.5" />
-      <path d="M90 88 Q130 10 170 88" stroke="#1A103C" strokeWidth="2" fill="none" strokeLinecap="round" />
-      <path d="M130 18 Q130 6 122 0 M130 18 Q130 6 138 0" stroke="#1A103C" strokeWidth="1.5" fill="none" />
-      <circle cx="122" cy="-2" r="4" fill="none" stroke="#1A103C" strokeWidth="1.5" />
-      <circle cx="138" cy="-2" r="4" fill="none" stroke="#1A103C" strokeWidth="1.5" />
-      <path d="M190 88 Q215 45 240 88" stroke="#1A103C" strokeWidth="2" fill="none" strokeLinecap="round" />
+    <svg viewBox="0 0 200 140" width="180" height="126" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Content wave illustration" aria-hidden="true">
+      {/* Wave / signal lines */}
+      <path d="M10 70 Q30 30 50 70 Q70 110 90 70 Q110 30 130 70 Q150 110 170 70 Q185 42 195 55"
+        stroke="#1A103C" strokeWidth="4" strokeLinecap="round" fill="none" />
+      <path d="M10 90 Q30 60 50 90 Q70 120 90 90 Q110 60 130 90 Q150 120 170 90 Q185 72 195 78"
+        stroke="#1A103C" strokeWidth="2.5" strokeLinecap="round" fill="none" opacity="0.5" />
+      <path d="M10 50 Q30 10 50 50 Q70 90 90 50 Q110 10 130 50 Q150 90 170 50 Q185 20 195 32"
+        stroke="#1A103C" strokeWidth="2" strokeLinecap="round" fill="none" opacity="0.3" />
+      {/* Platform circles */}
+      <circle cx="50" cy="70" r="10" fill="white" stroke="#1A103C" strokeWidth="2.5" />
+      <path d="M47 67 l3 3 5-5" stroke="#1A103C" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+      <circle cx="130" cy="70" r="10" fill="white" stroke="#1A103C" strokeWidth="2.5" />
+      <path d="M127 67 l3 3 5-5" stroke="#1A103C" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
 }
@@ -54,7 +24,7 @@ function MetricCard({ bg, accent, value, progressColor }: { bg: string; accent: 
       <div className="flex items-baseline gap-2">
         <span className="font-heading font-extrabold text-[22px] text-navy leading-none">{value}</span>
         <span className="font-body text-[11px] text-navy/60 flex items-center gap-1">
-          <span className="w-2 h-2 rounded-full bg-green-500 inline-block" />100%
+          <span className="w-2 h-2 rounded-full bg-green-500 inline-block" />↑ 24%
         </span>
       </div>
       <div className="h-1.5 w-full rounded-full bg-white/40">
@@ -64,16 +34,16 @@ function MetricCard({ bg, accent, value, progressColor }: { bg: string; accent: 
   );
 }
 
-function ProspectRow({ avatarUrl, name, role, isHighlighted = false }: { avatarUrl: string; name?: string; role?: string; isHighlighted?: boolean }) {
+function PostRow({ avatarUrl, platform, excerpt, isHighlighted = false }: { avatarUrl: string; platform?: string; excerpt?: string; isHighlighted?: boolean }) {
   return (
     <div className="flex items-center gap-2.5 px-3 py-2 rounded-lg" style={isHighlighted ? { background: '#5B7CF5' } : {}}>
-      <img src={avatarUrl} alt={name ? `${name} avatar` : 'prospect avatar'}
+      <img src={avatarUrl} alt={platform ? `${platform} post preview` : 'post preview'}
         className="w-7 h-7 rounded-full object-cover shrink-0" style={{ width: '28px', height: '28px' }} />
       <div className="flex-1 min-w-0">
-        {name ? (
+        {platform ? (
           <>
-            <p className="font-heading font-bold text-[12px] text-white leading-tight">{name}</p>
-            <p className="font-body text-[10px] text-white/70">{role}</p>
+            <p className="font-heading font-bold text-[12px] text-white leading-tight">{platform}</p>
+            <p className="font-body text-[10px] text-white/70 truncate">{excerpt}</p>
           </>
         ) : (
           <>
@@ -83,13 +53,13 @@ function ProspectRow({ avatarUrl, name, role, isHighlighted = false }: { avatarU
         )}
       </div>
       <div className="px-2 py-0.5 rounded-full text-[9px] font-bold shrink-0" style={{ background: '#FFB5D0', color: '#1A103C' }}>
-        {isHighlighted ? 'Hot lead' : 'Approve'}
+        {isHighlighted ? 'Trending' : 'Queue'}
       </div>
     </div>
   );
 }
 
-function CRMMockup() {
+function ContentDashboardMockup() {
   return (
     <div className="bg-white rounded-2xl shadow-2xl overflow-hidden" style={{ width: '100%', maxWidth: '420px', border: '2px solid rgba(26,16,60,0.12)' }}>
       {/* Browser chrome */}
@@ -102,10 +72,9 @@ function CRMMockup() {
         {/* Dark sidebar */}
         <div className="flex flex-col items-center py-4 gap-4 shrink-0" style={{ width: '56px', background: '#0F0A28' }}>
           <div className="w-7 h-7 rounded-sm bg-navy flex items-center justify-center">
-            <svg width="10" height="8" viewBox="0 0 10 8" fill="none">
-              <rect y="0" width="5" height="1.5" fill="white" />
-              <rect y="3" width="10" height="1.5" fill="white" />
-              <rect x="5" y="6" width="5" height="1.5" fill="white" />
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
+              <path d="M2 12 Q6 4 12 4 Q18 4 22 12 Q18 20 12 20 Q6 20 2 12Z" stroke="white" strokeWidth="2" fill="none" />
+              <circle cx="12" cy="12" r="3" fill="white" />
             </svg>
           </div>
           <div className="flex flex-col gap-1.5 w-6">
@@ -113,17 +82,16 @@ function CRMMockup() {
           </div>
           <div className="flex flex-col items-center gap-1 px-1 py-2 rounded-lg w-full mx-1" style={{ background: 'rgba(91,111,245,0.4)' }}>
             <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
-              <circle cx="8" cy="5" r="3" stroke="white" strokeWidth="1.5" />
-              <path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="white" strokeWidth="1.5" strokeLinecap="round" fill="none" />
+              <rect x="2" y="2" width="5" height="5" rx="1" stroke="white" strokeWidth="1.5" />
+              <rect x="9" y="2" width="5" height="5" rx="1" stroke="white" strokeWidth="1.5" />
+              <rect x="2" y="9" width="5" height="5" rx="1" stroke="white" strokeWidth="1.5" />
+              <rect x="9" y="9" width="5" height="5" rx="1" stroke="white" strokeWidth="1.5" />
             </svg>
-            <span className="text-white text-[7px] font-bold leading-none">Prospects</span>
+            <span className="text-white text-[7px] font-bold leading-none">Posts</span>
           </div>
           <div className="mt-auto flex flex-col gap-3">
             <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
-              <rect x="1" y="1" width="6" height="6" rx="1" stroke="white" strokeWidth="1.5" strokeOpacity="0.5" />
-              <rect x="9" y="1" width="6" height="6" rx="1" stroke="white" strokeWidth="1.5" strokeOpacity="0.5" />
-              <rect x="1" y="9" width="6" height="6" rx="1" stroke="white" strokeWidth="1.5" strokeOpacity="0.5" />
-              <rect x="9" y="9" width="6" height="6" rx="1" stroke="white" strokeWidth="1.5" strokeOpacity="0.5" />
+              <path d="M2 4 L14 4 M2 8 L10 8 M2 12 L12 12" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeOpacity="0.5" />
             </svg>
             <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
               <circle cx="8" cy="8" r="6" stroke="white" strokeWidth="1.5" strokeOpacity="0.5" />
@@ -134,22 +102,22 @@ function CRMMockup() {
         {/* Content area */}
         <div className="flex-1 p-4 flex flex-col gap-3">
           <div className="flex gap-3">
-            <MetricCard bg="#F5C418" accent="#1A103C" value="123" progressColor="#3B82F6" />
-            <MetricCard bg="#C4BCEC" accent="#1A103C" value="58" progressColor="#EF4444" />
+            <MetricCard bg="#F5C418" accent="#1A103C" value="38" progressColor="#3B82F6" />
+            <MetricCard bg="#C4BCEC" accent="#1A103C" value="9.1K" progressColor="#8B5CF6" />
           </div>
           <div className="flex items-center gap-2 border border-gray-200 rounded-lg px-3 py-2 bg-gray-50">
             <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
               <circle cx="6.5" cy="6.5" r="5" stroke="#6B7280" strokeWidth="1.5" />
               <path d="M10.5 10.5l3.5 3.5" stroke="#6B7280" strokeWidth="1.5" strokeLinecap="round" />
             </svg>
-            <span className="font-body text-[12px] text-gray-500">Search carers...</span>
+            <span className="font-body text-[12px] text-gray-500">Search posts...</span>
           </div>
           <div className="flex flex-col gap-1">
-            <ProspectRow avatarUrl="https://i.pravatar.cc/28?u=prospect-row-1" />
-            <ProspectRow avatarUrl="https://i.pravatar.cc/28?u=jessica-moore-cmo" name="Sarah Mitchell" role="Dog Walker · ⭐ 4.9" isHighlighted />
-            <ProspectRow avatarUrl="https://i.pravatar.cc/28?u=prospect-row-3" />
-            <ProspectRow avatarUrl="https://i.pravatar.cc/28?u=prospect-row-4" />
-            <ProspectRow avatarUrl="https://i.pravatar.cc/28?u=prospect-row-5" />
+            <PostRow avatarUrl="https://i.pravatar.cc/28?u=post-row-1" />
+            <PostRow avatarUrl="https://i.pravatar.cc/28?u=maya-creator" platform="LinkedIn" excerpt="Why AI is changing content..." isHighlighted />
+            <PostRow avatarUrl="https://i.pravatar.cc/28?u=post-row-3" />
+            <PostRow avatarUrl="https://i.pravatar.cc/28?u=post-row-4" />
+            <PostRow avatarUrl="https://i.pravatar.cc/28?u=post-row-5" />
           </div>
         </div>
       </div>
@@ -179,11 +147,11 @@ export default function LeadsSection() {
       <div className="w-full md:w-1/2 flex flex-col justify-center px-8 sm:px-14 lg:px-20 py-14 md:py-20" style={{ background: '#D4AAFF' }}>
         <div className="max-w-[400px] flex flex-col gap-6">
           <h2 className="font-heading font-extrabold text-[32px] sm:text-[38px] lg:text-[46px] leading-[1.1] text-navy">
-            Book and Track Quality Care Automatically
+            Schedule and Publish Automatically
           </h2>
           <p className="font-body text-[15px] leading-relaxed text-navy/65">
-            Woofly pulls vetted professionals from trusted sources and enriches them with verified
-            reviews. No more unreliable carers. Just trusted, experienced hands ready for your pup.
+            Channl analyses your content, enriches each post with AI-powered insights, and queues
+            everything for peak engagement times. No more manual publishing — just set it and grow.
           </p>
           <OffsetButton label="Try For Free" />
         </div>
@@ -200,15 +168,14 @@ export default function LeadsSection() {
           <rect width="100%" height="100%" fill="url(#leads-dots)" />
         </svg>
 
-        {/* CRM mockup */}
+        {/* Dashboard mockup */}
         <div className="relative z-10 w-full px-4 flex justify-center -translate-y-6 md:-translate-y-8">
-          <CRMMockup />
+          <ContentDashboardMockup />
         </div>
 
-        {/* Running dog + arches at bottom */}
+        {/* Wave illustration at bottom */}
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 flex flex-col items-center z-10">
-          <RunningDog />
-          <PlantArches />
+          <ContentWaveIcon />
         </div>
       </div>
     </section>

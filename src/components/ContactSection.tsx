@@ -39,7 +39,7 @@ function CityIllustration() {
       <circle cx="720" cy="258" r="4" fill={dark} />
       <ellipse cx="980" cy="240" rx="34" ry="30" fill={fill} stroke={stroke} strokeWidth="1.2" />
       <line x1="980" y1="268" x2="980" y2="310" stroke={stroke} strokeWidth="5" strokeLinecap="round" />
-      {/* Person */}
+      {/* Person at desk */}
       <ellipse cx="730" cy="220" rx="13" ry="16" fill="#1A103C" />
       <circle cx="730" cy="200" r="10" fill="#1A103C" />
       <line x1="726" y1="236" x2="720" y2="270" stroke="#1A103C" strokeWidth="4" strokeLinecap="round" />
@@ -47,19 +47,10 @@ function CityIllustration() {
       <ellipse cx="718" cy="272" rx="8" ry="4" fill="#1A103C" />
       <ellipse cx="743" cy="267" rx="8" ry="4" fill="#1A103C" />
       <line x1="718" y1="224" x2="700" y2="248" stroke="#1A103C" strokeWidth="3" strokeLinecap="round" />
-      <path d="M700 248 Q680 265 672 270" stroke="#1A103C" strokeWidth="1.5" fill="none" strokeLinecap="round" />
-      {/* Dog */}
-      <ellipse cx="655" cy="274" rx="22" ry="14" fill="white" stroke="#1A103C" strokeWidth="2" />
-      <ellipse cx="648" cy="270" rx="5" ry="3.5" fill="#1A103C" />
-      <ellipse cx="664" cy="278" rx="4" ry="3" fill="#1A103C" />
-      <circle cx="634" cy="270" r="10" fill="white" stroke="#1A103C" strokeWidth="2" />
-      <path d="M626 264 Q618 268 618 276 Q620 282 628 280" fill="white" stroke="#1A103C" strokeWidth="1.8" />
-      <circle cx="630" cy="268" r="2" fill="#1A103C" />
-      <line x1="640" y1="288" x2="636" y2="304" stroke="#1A103C" strokeWidth="3" strokeLinecap="round" />
-      <line x1="650" y1="288" x2="652" y2="306" stroke="#1A103C" strokeWidth="3" strokeLinecap="round" />
-      <line x1="663" y1="286" x2="666" y2="304" stroke="#1A103C" strokeWidth="3" strokeLinecap="round" />
-      <line x1="673" y1="285" x2="678" y2="302" stroke="#1A103C" strokeWidth="3" strokeLinecap="round" />
-      <path d="M677 268 Q690 250 692 240" stroke="#1A103C" strokeWidth="3" strokeLinecap="round" fill="none" />
+      {/* Laptop */}
+      <path d="M700 248 Q680 255 672 260" stroke="#1A103C" strokeWidth="1.5" fill="none" strokeLinecap="round" />
+      <rect x="660" y="248" width="30" height="20" rx="2" fill="white" stroke="#1A103C" strokeWidth="1.5" />
+      <rect x="656" y="268" width="38" height="4" rx="1" fill="#1A103C" opacity="0.5" />
       {/* Right buildings */}
       <rect x="1020" y="60" width="170" height="250" fill={fill} stroke={stroke} strokeWidth="1.5" />
       {[0,1,2,3].map(col=>[0,1,2,3,4].map(row=><rect key={`r${col}${row}`} x={1030+col*38} y={76+row*40} width="24" height="28" rx="2" fill={dark} opacity="0.5" />))}
@@ -143,7 +134,7 @@ export default function ContactSection() {
             Get in touch
           </h2>
           <p className="font-body text-[15px] md:text-[16px] leading-relaxed text-navy/55">
-            Our dog-loving team is here to help.<br className="hidden sm:block" /> We're just a click away.
+            Our creator-focused team is here to help.<br className="hidden sm:block" /> We're just a click away.
           </p>
         </div>
 
@@ -166,11 +157,11 @@ export default function ContactSection() {
             <FieldLabel>What can we help you with?</FieldLabel>
             <div className="relative">
               <select className={`${inputCls} appearance-none pr-12 cursor-pointer`} defaultValue="">
-                <option value="" disabled>How can we help your pup?</option>
+                <option value="" disabled>How can we help you?</option>
                 <option value="demo">Request a demo</option>
                 <option value="pricing">Pricing enquiry</option>
-                <option value="walker">Become a dog walker</option>
-                <option value="vet">Partner as a vet or groomer</option>
+                <option value="agency">Agency or team plan</option>
+                <option value="partner">Content partnership</option>
                 <option value="support">Support</option>
                 <option value="other">Other</option>
               </select>
@@ -186,7 +177,7 @@ export default function ContactSection() {
           <div>
             <FieldLabel>Can you provide us with a little message? (Optional)</FieldLabel>
             <textarea className={`${inputCls} resize-none`} rows={4}
-              placeholder="Tell us about your dog and what you need — we'd love to hear from you!" />
+              placeholder="Tell us about your content and what you need — we'd love to help!" />
           </div>
 
           <MockRecaptcha />

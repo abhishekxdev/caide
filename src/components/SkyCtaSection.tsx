@@ -85,72 +85,49 @@ function HotAirBalloon({ icon, balloonSize, style, animClass, animDelay, classNa
   );
 }
 
-function HubspotIcon({ s }: { s: number }) {
+function XIcon({ s }: { s: number }) {
+  return (
+    <svg viewBox="0 0 24 24" width={s} height={s} fill="rgba(255,255,255,0.85)" aria-hidden="true">
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.259 5.632zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+    </svg>
+  );
+}
+
+function ThreadsIcon({ s }: { s: number }) {
+  return (
+    <svg viewBox="0 0 24 24" width={s} height={s} fill="rgba(255,255,255,0.85)" aria-hidden="true">
+      <path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.5 12.068v-.168C1.5 8.149 2.391 5.275 4.14 3.158 5.978.928 8.71-.005 12.093 0c3.366.007 6.064 1.009 8.016 2.978 1.875 1.888 2.89 4.542 2.891 7.664v.12c.002 3.12-1.014 5.775-2.89 7.664-1.952 1.97-4.65 2.97-8.016 2.978zm4.86-10.003c-.293-3.047-2.153-4.81-5.02-4.83-1.778.012-3.152.75-3.906 2.103a5.87 5.87 0 00-.753 2.934c0 2.037.96 3.551 2.707 4.249a4.808 4.808 0 001.916.365c1.84 0 3.223-.757 4.027-2.177.198-.348.35-.719.452-1.107a5.864 5.864 0 00.177-1.537zm-5.021-3.095c1.81.011 2.975.96 3.158 2.598H9.118c.24-1.677 1.413-2.61 2.907-2.598z" />
+    </svg>
+  );
+}
+
+function LinkedInIcon({ s }: { s: number }) {
+  return (
+    <svg viewBox="0 0 24 24" width={s} height={s} fill="rgba(255,255,255,0.85)" aria-hidden="true">
+      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+    </svg>
+  );
+}
+
+function AnalyticsIcon({ s }: { s: number }) {
   return (
     <svg viewBox="0 0 24 24" width={s} height={s} fill="none" aria-hidden="true">
-      <circle cx="12" cy="12" r="3" fill="rgba(255,255,255,0.85)" />
-      <circle cx="12" cy="4"  r="2" fill="rgba(255,255,255,0.7)" />
-      <circle cx="20" cy="12" r="2" fill="rgba(255,255,255,0.7)" />
-      <circle cx="12" cy="20" r="2" fill="rgba(255,255,255,0.7)" />
-      <circle cx="4"  cy="12" r="2" fill="rgba(255,255,255,0.7)" />
-      <line x1="12" y1="9"  x2="12" y2="6"  stroke="rgba(255,255,255,0.7)" strokeWidth="1.5" />
-      <line x1="15" y1="12" x2="18" y2="12" stroke="rgba(255,255,255,0.7)" strokeWidth="1.5" />
-      <line x1="12" y1="15" x2="12" y2="18" stroke="rgba(255,255,255,0.7)" strokeWidth="1.5" />
-      <line x1="9"  y1="12" x2="6"  y2="12" stroke="rgba(255,255,255,0.7)" strokeWidth="1.5" />
+      <path d="M3 20 L7 13 L11 16 L15 8 L21 4" stroke="rgba(255,255,255,0.85)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+      <circle cx="7" cy="13" r="2" fill="rgba(255,255,255,0.7)" />
+      <circle cx="11" cy="16" r="2" fill="rgba(255,255,255,0.7)" />
+      <circle cx="15" cy="8" r="2" fill="rgba(255,255,255,0.7)" />
+      <circle cx="21" cy="4" r="2" fill="rgba(255,255,255,0.7)" />
     </svg>
   );
 }
 
-function MailboxIcon({ s }: { s: number }) {
-  return (
-    <svg viewBox="0 0 28 28" width={s} height={s} fill="none" aria-hidden="true">
-      <rect x="13" y="16" width="2.5" height="9" rx="1" fill="rgba(255,255,255,0.7)" />
-      <rect x="4" y="8" width="20" height="12" rx="3" stroke="rgba(255,255,255,0.85)" strokeWidth="1.8" />
-      <path d="M4 11 Q4 4 14 4 Q24 4 24 11" stroke="rgba(255,255,255,0.85)" strokeWidth="1.8" fill="none" />
-      <line x1="9" y1="14" x2="19" y2="14" stroke="rgba(255,255,255,0.6)" strokeWidth="1.5" strokeLinecap="round" />
-      <line x1="22" y1="8" x2="22" y2="14" stroke="rgba(255,255,255,0.7)" strokeWidth="1.5" />
-      <rect x="22" y="8" width="5" height="3.5" rx="0.5" fill="rgba(255,255,255,0.7)" />
-    </svg>
-  );
-}
-
-function PeopleIcon({ s }: { s: number }) {
-  return (
-    <svg viewBox="0 0 24 24" width={s} height={s} fill="none" aria-hidden="true">
-      <circle cx="9"  cy="7"  r="3.5" stroke="rgba(255,255,255,0.85)" strokeWidth="1.5" />
-      <circle cx="16" cy="6"  r="2.5" stroke="rgba(255,255,255,0.6)"  strokeWidth="1.5" />
-      <path d="M2 19c0-4 3-7 7-7s7 3 7 7" stroke="rgba(255,255,255,0.85)" strokeWidth="1.5" strokeLinecap="round" fill="none" />
-      <path d="M16 9c2 0 5 1.8 5 5" stroke="rgba(255,255,255,0.55)" strokeWidth="1.5" strokeLinecap="round" fill="none" />
-    </svg>
-  );
-}
-
-function SlackIcon({ s }: { s: number }) {
-  return (
-    <svg viewBox="0 0 24 24" width={s} height={s} fill="none" aria-hidden="true">
-      <rect x="4"    y="4"    width="6.5" height="6.5" rx="2" fill="rgba(255,255,255,0.75)" />
-      <rect x="13.5" y="4"    width="6.5" height="6.5" rx="2" fill="rgba(255,255,255,0.55)" />
-      <rect x="4"    y="13.5" width="6.5" height="6.5" rx="2" fill="rgba(255,255,255,0.55)" />
-      <rect x="13.5" y="13.5" width="6.5" height="6.5" rx="2" fill="rgba(255,255,255,0.4)"  />
-    </svg>
-  );
-}
-
-function InlineDog() {
+function InlineIcon() {
   return (
     <span className="inline-flex items-center mx-1.5 relative" style={{ top: '2px' }}>
-      <svg viewBox="0 0 32 32" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Caide dog">
-        <circle cx="16" cy="16" r="15" fill="white" />
-        <circle cx="16" cy="16" r="9"  fill="white" stroke="#1A103C" strokeWidth="1.2" />
-        <ellipse cx="20" cy="14" rx="3"   ry="2.2" fill="#1A103C" />
-        <ellipse cx="13" cy="18" rx="2.2" ry="1.6" fill="#1A103C" />
-        <ellipse cx="8"  cy="16" rx="3.5" ry="6"   fill="white" stroke="#1A103C" strokeWidth="1" />
-        <ellipse cx="24" cy="16" rx="3.5" ry="6"   fill="white" stroke="#1A103C" strokeWidth="1" />
-        <circle cx="13.5" cy="15" r="1.8" fill="#1A103C" />
-        <circle cx="18.5" cy="15" r="1.8" fill="#1A103C" />
-        <circle cx="14.2" cy="14.3" r="0.6" fill="white" />
-        <circle cx="19.2" cy="14.3" r="0.6" fill="white" />
-        <ellipse cx="16" cy="20" rx="2" ry="1.5" fill="#1A103C" />
+      <svg viewBox="0 0 32 32" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Channl icon">
+        <circle cx="16" cy="16" r="15" fill="rgba(42,24,88,0.9)" />
+        <path d="M4 16 Q8 8 16 8 Q24 8 28 16 Q24 24 16 24 Q8 24 4 16Z" stroke="rgba(255,255,255,0.85)" strokeWidth="1.8" fill="none" />
+        <circle cx="16" cy="16" r="3.5" fill="rgba(255,255,255,0.85)" />
       </svg>
     </span>
   );
@@ -179,13 +156,13 @@ export default function SkyCtaSection() {
       {STARS.map((s, i) => <StarDot key={i} {...s} />)}
 
       {/* Balloons — hide smaller ones on mobile */}
-      <HotAirBalloon icon={<HubspotIcon s={24} />} balloonSize={64}
+      <HotAirBalloon icon={<XIcon s={24} />} balloonSize={64}
         style={{ left: '5%', top: '14%' }} animClass="animate-float-slow" className="hidden sm:block" />
-      <HotAirBalloon icon={<MailboxIcon s={36} />} balloonSize={88}
+      <HotAirBalloon icon={<ThreadsIcon s={36} />} balloonSize={88}
         style={{ left: '38%', top: '4%' }} animClass="animate-float" />
-      <HotAirBalloon icon={<PeopleIcon s={30} />} balloonSize={72}
+      <HotAirBalloon icon={<LinkedInIcon s={30} />} balloonSize={72}
         style={{ right: '12%', top: '5%' }} animClass="animate-float-fast" animDelay="1s" />
-      <HotAirBalloon icon={<SlackIcon s={22} />} balloonSize={54}
+      <HotAirBalloon icon={<AnalyticsIcon s={22} />} balloonSize={54}
         style={{ right: '3%', top: '28%' }} animClass="animate-float-slow" className="hidden md:block" />
 
       {/* Moon */}
@@ -199,10 +176,10 @@ export default function SkyCtaSection() {
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center text-center px-6 sm:px-8 max-w-[680px] pb-16 md:pb-20 pt-16">
         <h2 className="font-heading font-extrabold text-[28px] sm:text-[36px] lg:text-[52px] leading-[1.15]" style={{ color: '#2A1858' }}>
-          You don't need to be a vet to give your dog expert-level care.
+          You don't need a content team to publish like one.
         </h2>
         <p className="font-heading font-extrabold text-[22px] sm:text-[28px] lg:text-[40px] leading-[1.2] mt-6 md:mt-8" style={{ color: '#2A1858' }}>
-          80% of dog owners struggle to find reliable care. Woofly<InlineDog />makes sure you won't.
+          80% of creators never repurpose their content. Channl<InlineIcon />makes sure you won't miss a post.
         </p>
         <OffsetButton label="Try free for 14 days" />
       </div>

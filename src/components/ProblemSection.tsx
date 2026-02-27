@@ -12,13 +12,15 @@ function HillsDecoration() {
   );
 }
 
-function TennisBallIcon() {
+function BroadcastIcon() {
   return (
     <div className="absolute bottom-5 right-5 w-12 h-12 rounded-full bg-navy flex items-center justify-center">
-      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="30" height="30" aria-hidden="true">
-        <circle cx="20" cy="20" r="18" stroke="white" strokeWidth="1.5" />
-        <path d="M4 20 Q12 8 20 20 Q28 32 36 20" stroke="white" strokeWidth="1.5" fill="none" />
-        <path d="M4 20 Q12 32 20 20 Q28 8 36 20" stroke="white" strokeWidth="1.5" fill="none" />
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="26" height="26" aria-hidden="true">
+        <circle cx="20" cy="20" r="4" fill="white" />
+        <path d="M12 28 Q8 24 8 20 Q8 16 12 12" stroke="white" strokeWidth="2" fill="none" strokeLinecap="round" />
+        <path d="M28 12 Q32 16 32 20 Q32 24 28 28" stroke="white" strokeWidth="2" fill="none" strokeLinecap="round" />
+        <path d="M8 32 Q2 26 2 20 Q2 14 8 8" stroke="white" strokeWidth="1.5" fill="none" strokeLinecap="round" />
+        <path d="M32 8 Q38 14 38 20 Q38 26 32 32" stroke="white" strokeWidth="1.5" fill="none" strokeLinecap="round" />
       </svg>
     </div>
   );
@@ -30,13 +32,13 @@ export default function ProblemSection() {
       {/* Headline */}
       <div className="text-center max-w-[720px] mb-10 md:mb-12">
         <h2 className="font-heading font-extrabold text-[34px] sm:text-[42px] lg:text-[54px] leading-[1.1] text-navy mb-4 md:mb-5">
-            Tired of Dog Care that Stresses You Out?
-          </h2>
-          <p className="font-body text-[15px] md:text-[17px] leading-relaxed text-navy/60 max-w-[580px] mx-auto">
-            Managing your dog's health demands you're a vet, scheduler, and
-            nutritionist all at once. It's exhausting, expensive, and impossible
-            to keep track of.
-          </p>
+          Tired of Repurposing Content Manually?
+        </h2>
+        <p className="font-body text-[15px] md:text-[17px] leading-relaxed text-navy/60 max-w-[580px] mx-auto">
+          Managing multi-channel content demands you're a writer, designer, and
+          strategist all at once. It's time-consuming, inconsistent, and impossible
+          to scale on your own.
+        </p>
       </div>
 
       {/* Card */}
@@ -52,17 +54,17 @@ export default function ProblemSection() {
           {/* Left */}
           <div className="md:w-[45%]">
             <h3 className="font-heading font-extrabold text-[26px] md:text-[32px] leading-tight text-navy">
-              Expensive &<br />Stressful
+              Tedious &<br />Time-Draining
             </h3>
           </div>
 
           {/* Right */}
           <div className="md:w-[55%] flex flex-col gap-6">
             <p className="font-body text-[14px] md:text-[15px] leading-relaxed text-navy/75">
-              The old way drains your energy and delivers anxiety in return. Dog
-              owners juggle vet visits, walkers, groomers, and trainers just to
-              keep one pup healthy. It's a fragmented, time-consuming mess built
-              for chaos, not care.
+              The old way drains your creativity and delivers frustration in return. Creators
+              manually rewrite the same content 5 different ways for 3 different platforms,
+              then schedule each post one by one. It's fragmented, error-prone, and built
+              for chaos, not creators.
             </p>
 
             <div className="relative w-fit">
@@ -78,7 +80,7 @@ export default function ProblemSection() {
         </div>
 
         <HillsDecoration />
-        <TennisBallIcon />
+        <BroadcastIcon />
       </div>
     </section>
   );

@@ -1,4 +1,4 @@
-const features = ['✓ GDPR compliant', '✓ No credit card required', '✓ Free 14-day trial for dog lovers'];
+const features = ['✓ No credit card required', '✓ Free 14-day trial', '✓ Works with YouTube, blogs & podcasts'];
 
 function DotGrid() {
   return (
@@ -22,19 +22,19 @@ export default function HeroSection() {
           {/* Eyebrow */}
           <div className="inline-flex w-fit">
             <span className="border border-dashed border-navy/40 px-4 py-1.5 font-body font-semibold text-[11px] tracking-[0.15em] uppercase text-navy/60">
-              AI-Powered Dog Care Platform
+              AI-Powered Content Repurposing
             </span>
           </div>
 
           {/* Headline */}
           <h1 className="font-heading font-extrabold text-[36px] sm:text-[44px] lg:text-[56px] leading-[1.08] text-navy max-w-[520px]">
-            Give Your Dog the Best Care Without Breaking a Sweat
+            Turn Any Link Into Platform-Ready Social Posts
           </h1>
 
           {/* Subtext */}
           <p className="font-body text-[15px] md:text-[16px] leading-relaxed text-navy/70 max-w-[440px]">
-            Woofly is your AI-powered dog care companion, built to make sure
-            your furry friend gets the love, health, and happiness they deserve.
+            Drop a YouTube or blog URL and Channl's AI generates perfectly
+            crafted posts for X, Threads, and LinkedIn — ready to schedule and ship.
           </p>
 
           {/* CTAs */}
@@ -69,7 +69,7 @@ export default function HeroSection() {
         <DotGrid />
         <img
           src="/hero-illustration.svg"
-          alt="Person relaxing on sofa with laptop — Work From Home illustration by Streamline"
+          alt="Creator working on laptop — content repurposing illustration"
           className="relative z-10 w-full max-w-[380px] md:max-w-[480px] object-contain select-none"
           style={{ mixBlendMode: 'multiply' }}
           draggable={false}

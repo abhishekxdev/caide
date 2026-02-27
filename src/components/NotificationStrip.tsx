@@ -1,9 +1,9 @@
 import NotificationCard from './NotificationCard.tsx';
 
 const notifications = [
-  { type: 'Walk Completed', message: 'Max completed his 30-min walk...', channel: 'Walks' },
-  { type: 'Vet Appointment', message: 'Annual check-up confirmed for Thu...', channel: 'Health' },
-  { type: 'New Walker', message: 'Sarah rated ⭐⭐⭐⭐⭐ for Bella...', channel: 'Care' },
+  { type: 'Post Published', message: 'Your LinkedIn article hit 2.1k views today...', channel: 'LinkedIn' },
+  { type: 'Trending', message: 'X thread on "AI Tools" is going viral — 840 reposts...', channel: 'X' },
+  { type: 'Queue Ready', message: '5 Threads posts scheduled for next 7 days...', channel: 'Scheduled' },
 ];
 
 export default function NotificationStrip() {
@@ -16,9 +16,9 @@ export default function NotificationStrip() {
 
         {/* Stat widget */}
         <div className="shrink-0 min-w-[120px] md:flex-1 px-6 py-5 bg-lavender/20 flex flex-col items-center justify-center text-center gap-1">
-          <span className="font-heading font-800 text-4xl text-navy leading-none">127</span>
+          <span className="font-heading font-800 text-4xl text-navy leading-none">2,400+</span>
           <span className="font-body text-[13px] text-muted leading-tight">
-            Happy pups<br />cared for today
+            Posts published<br />by creators today
           </span>
         </div>
       </div>

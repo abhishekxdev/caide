@@ -36,11 +36,11 @@ export default function SolutionSection() {
       {/* Headline */}
       <div className="text-center max-w-[680px] mb-10 md:mb-12">
         <h2 className="font-heading font-extrabold text-[36px] sm:text-[44px] lg:text-[58px] leading-[1.08] text-navy mb-4 md:mb-5">
-          From chaos to calm
+          One link. Every platform. Done.
         </h2>
         <p className="font-body text-[15px] md:text-[17px] leading-relaxed text-navy/60 max-w-[600px] mx-auto">
-          Woofly simplifies your dog care routine, schedules appointments that actually work, and
-          keeps your pup healthy. All without draining your wallet or burning you out.
+          Channl takes your source content, learns your voice, and generates platform-optimized
+          posts for X, Threads, and LinkedIn. Schedule, analyse, and grow — all from one place.
         </p>
       </div>
 
@@ -49,13 +49,14 @@ export default function SolutionSection() {
         <div className="relative z-10 flex flex-col md:flex-row gap-6 md:gap-8 px-6 sm:px-10 pt-10 pb-0">
           <div className="md:w-[45%]">
             <h3 className="font-heading font-extrabold text-[24px] md:text-[30px] leading-tight text-navy">
-              Smarter AI,<br />Happier Dogs
+              Smarter AI,<br />Better Reach
             </h3>
           </div>
           <div className="md:w-[55%] flex flex-col gap-5">
             <p className="font-body text-[13px] md:text-[14px] leading-relaxed text-navy/65 max-w-[320px]">
-              Breed-aware AI trained on thousands of dog health profiles. Always learning your pup's
-              needs, always evolving, always giving you the best advice for the job.
+              Trained on millions of high-performing posts across X, Threads, and LinkedIn.
+              Always learning your voice, always adapting, always giving you content that
+              actually gets engagement.
             </p>
             <OffsetButton label="Try for free" />
           </div>
@@ -63,14 +64,17 @@ export default function SolutionSection() {
 
         <div className="relative h-[160px] mt-4">
           <ArchCurves />
-          <img src="https://pixabay.com/get/g1376913197c05283c23e73e06db636cc8639deba84a7d1e77f5e11827131a8035f239afb1cd6505233fc85cdc88771bf.svg"
-            alt="Running dog illustration" className="absolute bottom-2 left-6"
+          <img src="/workspace.svg"
+            alt="Creator at workspace illustration" className="absolute bottom-2 left-6"
             style={{ width: '140px', height: '110px', objectFit: 'contain', mixBlendMode: 'multiply' }} />
           <div className="absolute bottom-4 right-5 w-10 h-10 rounded-full bg-navy flex items-center justify-center">
+            {/* Signal/broadcast icon */}
             <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="22" height="22" aria-hidden="true">
-              <circle cx="16" cy="16" r="14" stroke="white" strokeWidth="1.5" />
-              <path d="M4 16 Q10 8 16 16 Q22 24 28 16" stroke="white" strokeWidth="1.5" fill="none" />
-              <path d="M4 16 Q10 24 16 16 Q22 8 28 16" stroke="white" strokeWidth="1.5" fill="none" />
+              <circle cx="16" cy="16" r="3.5" fill="white" />
+              <path d="M10 22 Q6 18 6 16 Q6 14 10 10" stroke="white" strokeWidth="1.5" fill="none" strokeLinecap="round" />
+              <path d="M22 10 Q26 14 26 16 Q26 18 22 22" stroke="white" strokeWidth="1.5" fill="none" strokeLinecap="round" />
+              <path d="M7 25 Q2 21 2 16 Q2 11 7 7" stroke="white" strokeWidth="1.2" fill="none" strokeLinecap="round" />
+              <path d="M25 7 Q30 11 30 16 Q30 21 25 25" stroke="white" strokeWidth="1.2" fill="none" strokeLinecap="round" />
             </svg>
           </div>
         </div>

@@ -12,6 +12,46 @@ function Sparkle({ size = 40, color = '#F5C418' }: { size?: number; color?: stri
   );
 }
 
+function ContentIcon() {
+  return (
+    <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-navy/20 flex items-center justify-center bg-white">
+      <svg viewBox="0 0 56 56" width="56" height="56" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Content creator icon">
+        <circle cx="28" cy="28" r="28" fill="#DDD0FF" />
+        {/* Document */}
+        <rect x="16" y="14" width="24" height="28" rx="3" fill="white" stroke="#1A103C" strokeWidth="1.5" />
+        <line x1="20" y1="20" x2="36" y2="20" stroke="#1A103C" strokeWidth="1.2" strokeLinecap="round" />
+        <line x1="20" y1="25" x2="36" y2="25" stroke="#1A103C" strokeWidth="1.2" strokeLinecap="round" />
+        <line x1="20" y1="30" x2="30" y2="30" stroke="#1A103C" strokeWidth="1.2" strokeLinecap="round" />
+        {/* Sparkle */}
+        <circle cx="38" cy="18" r="6" fill="#F5C418" />
+        <path d="M38 14v2M38 20v2M34 18h2M40 18h2" stroke="#1A103C" strokeWidth="1.2" strokeLinecap="round" />
+      </svg>
+    </div>
+  );
+}
+
+function SmallPlatforms() {
+  return (
+    <div className="flex items-end gap-3 px-4 pb-2">
+      <div className="w-8 h-8 rounded-lg bg-gray-100 flex items-center justify-center">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="#1A103C" aria-hidden="true">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.259 5.632zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+        </svg>
+      </div>
+      <div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="#1A103C" aria-hidden="true">
+          <path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.5 12.068v-.168C1.5 8.149 2.391 5.275 4.14 3.158 5.978.928 8.71-.005 12.093 0c3.366.007 6.064 1.009 8.016 2.978 1.875 1.888 2.89 4.542 2.891 7.664v.12c.002 3.12-1.014 5.775-2.89 7.664-1.952 1.97-4.65 2.97-8.016 2.978zm4.86-10.003c-.293-3.047-2.153-4.81-5.02-4.83-1.778.012-3.152.75-3.906 2.103a5.87 5.87 0 00-.753 2.934c0 2.037.96 3.551 2.707 4.249a4.808 4.808 0 001.916.365c1.84 0 3.223-.757 4.027-2.177.198-.348.35-.719.452-1.107a5.864 5.864 0 00.177-1.537zm-5.021-3.095c1.81.011 2.975.96 3.158 2.598H9.118c.24-1.677 1.413-2.61 2.907-2.598z" />
+        </svg>
+      </div>
+      <div className="w-8 h-8 rounded-lg bg-sky-100 flex items-center justify-center">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="#0A66C2" aria-hidden="true">
+          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+        </svg>
+      </div>
+    </div>
+  );
+}
+
 function PottedPlant() {
   return (
     <svg viewBox="0 0 90 110" width="80" height="98" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -23,56 +63,6 @@ function PottedPlant() {
       <path d="M45 62 Q38 45 35 30 Q42 48 45 62Z" fill="white" stroke="white" strokeWidth="1" />
       <path d="M45 42 Q52 28 56 14 Q50 30 45 42Z" fill="white" stroke="white" strokeWidth="1" />
     </svg>
-  );
-}
-
-function SmallPlants() {
-  return (
-    <svg viewBox="0 0 220 55" width="180" height="45" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <line x1="25" y1="52" x2="25" y2="32" stroke="#1A103C" strokeWidth="1.5" strokeLinecap="round" />
-      <circle cx="25" cy="28" r="5" fill="none" stroke="#1A103C" strokeWidth="1.5" />
-      <line x1="45" y1="52" x2="45" y2="20" stroke="#1A103C" strokeWidth="1.5" strokeLinecap="round" />
-      <path d="M45 20 Q40 12 36 8" stroke="#1A103C" strokeWidth="1.5" strokeLinecap="round" fill="none" />
-      <path d="M45 20 Q50 12 54 8" stroke="#1A103C" strokeWidth="1.5" strokeLinecap="round" fill="none" />
-      <circle cx="36" cy="7" r="4" fill="none" stroke="#1A103C" strokeWidth="1.5" />
-      <circle cx="54" cy="7" r="4" fill="none" stroke="#1A103C" strokeWidth="1.5" />
-      <line x1="70" y1="52" x2="70" y2="35" stroke="#1A103C" strokeWidth="1.5" strokeLinecap="round" />
-      <path d="M70 35 Q64 27 60 22 M70 35 Q76 27 80 22" stroke="#1A103C" strokeWidth="1.5" strokeLinecap="round" fill="none" />
-      <circle cx="60" cy="20" r="3" fill="none" stroke="#1A103C" strokeWidth="1.5" />
-      <circle cx="80" cy="20" r="3" fill="none" stroke="#1A103C" strokeWidth="1.5" />
-      <line x1="100" y1="52" x2="100" y2="38" stroke="#1A103C" strokeWidth="1.5" strokeLinecap="round" />
-      <circle cx="100" cy="33" r="6" fill="none" stroke="#1A103C" strokeWidth="1.5" />
-      <line x1="120" y1="52" x2="120" y2="30" stroke="#1A103C" strokeWidth="1.5" strokeLinecap="round" />
-      <path d="M120 30 Q114 22 110 17" stroke="#1A103C" strokeWidth="1.5" strokeLinecap="round" fill="none" />
-      <path d="M120 30 Q126 22 130 17" stroke="#1A103C" strokeWidth="1.5" strokeLinecap="round" fill="none" />
-      <circle cx="110" cy="15" r="3.5" fill="none" stroke="#1A103C" strokeWidth="1.5" />
-      <circle cx="130" cy="15" r="3.5" fill="none" stroke="#1A103C" strokeWidth="1.5" />
-      <circle cx="10" cy="52" r="2" fill="#1A103C" />
-      <circle cx="148" cy="52" r="2" fill="#1A103C" />
-    </svg>
-  );
-}
-
-function DalmatianAvatar() {
-  return (
-    <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-navy/20 flex items-center justify-center bg-white">
-      <svg viewBox="0 0 56 56" width="56" height="56" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Dalmatian dog avatar">
-        <circle cx="28" cy="28" r="28" fill="#F0F0F0" />
-        <circle cx="28" cy="28" r="16" fill="white" />
-        <ellipse cx="34" cy="24" rx="5" ry="4" fill="#1A103C" />
-        <ellipse cx="22" cy="32" rx="4" ry="3" fill="#1A103C" />
-        <ellipse cx="14" cy="28" rx="5" ry="9" fill="white" />
-        <ellipse cx="14" cy="28" rx="3.5" ry="7" fill="#D0D0D0" />
-        <ellipse cx="42" cy="28" rx="5" ry="9" fill="white" />
-        <ellipse cx="42" cy="28" rx="3.5" ry="7" fill="#D0D0D0" />
-        <circle cx="23" cy="26" r="2.5" fill="#1A103C" />
-        <circle cx="33" cy="26" r="2.5" fill="#1A103C" />
-        <circle cx="23.8" cy="25.2" r="0.9" fill="white" />
-        <circle cx="33.8" cy="25.2" r="0.9" fill="white" />
-        <ellipse cx="28" cy="32" rx="3" ry="2.2" fill="#1A103C" />
-        <path d="M25 35 Q28 38 31 35" stroke="#1A103C" strokeWidth="1.2" fill="none" strokeLinecap="round" />
-      </svg>
-    </div>
   );
 }
 
@@ -112,17 +102,17 @@ function OffsetButton({ label, shadowColor }: { label: string; shadowColor: stri
 }
 
 const withoutItems = [
-  'Juggling 5 different apps just to book one walker',
-  'Generic care advice that ignores your dog\'s breed',
-  'Hours wasted on manual research and phone calls',
-  'Guesswork in finding trustworthy professionals',
+  'Writing the same content 5 different ways by hand',
+  'Generic posts that miss each platform\'s tone and format',
+  'Hours wasted on manual copy-paste and reformatting',
+  'No idea which posts are actually getting traction',
 ];
 
 const withItems = [
-  'One platform for booking, tracking, paying, and messaging',
-  'Hyper-personalised care based on your dog\'s profile',
-  'Deep professional vetting done for you at scale',
-  'Smart matching based on your dog\'s real needs',
+  'One URL → posts for X, Threads & LinkedIn in seconds',
+  'AI-adapted tone and format per platform automatically',
+  'Smart scheduling at peak engagement times',
+  'Real-time performance analytics across all channels',
 ];
 
 export default function GlowUpSection() {
@@ -131,26 +121,26 @@ export default function GlowUpSection() {
       {/* Headline */}
       <div className="text-center max-w-[640px] mb-10 md:mb-12">
         <h2 className="font-heading font-extrabold text-[36px] sm:text-[44px] lg:text-[56px] leading-[1.1] text-navy mb-4 md:mb-5">
-          The Dog Care Glow-Up
+          The Creator Glow-Up
         </h2>
         <p className="font-body text-[14px] md:text-[16px] leading-relaxed text-navy/60">
-          Scheduling, tracking, communicating, paying — Woofly simplifies every step and delivers
-          results your old scattered setup never could.
+          Repurposing, scheduling, analysing, publishing — Channl simplifies every step and delivers
+          results your old manual workflow never could.
         </p>
       </div>
 
       {/* Comparison cards */}
       <div className="flex flex-col md:flex-row max-w-[860px] w-full">
 
-        {/* Left: Without Caide */}
+        {/* Left: Without Channl */}
         <div className="flex-1 rounded-2xl md:rounded-r-none relative flex flex-col border-2 border-navy/70 bg-white overflow-hidden" style={{ minHeight: '480px' }}>
           <div className="px-6 sm:px-8 pt-8 pb-0 flex flex-col gap-5 flex-1">
             <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-navy/15" style={{ filter: 'grayscale(1) blur(1.5px)', opacity: 0.55 }}>
-              <img src="https://i.pravatar.cc/56?u=without-caide" alt="Without Caide avatar" style={{ width: '56px', height: '56px', objectFit: 'cover' }} />
+              <img src="https://i.pravatar.cc/56?u=without-channl" alt="Without Channl avatar" style={{ width: '56px', height: '56px', objectFit: 'cover' }} />
             </div>
             <div>
-              <h3 className="font-heading font-extrabold text-[20px] md:text-[22px] text-navy mb-2">Without Woofly</h3>
-              <p className="font-body text-[13px] text-navy/50 leading-snug max-w-[260px]">The old way of managing dog care that just doesn't scale</p>
+              <h3 className="font-heading font-extrabold text-[20px] md:text-[22px] text-navy mb-2">Without Channl</h3>
+              <p className="font-body text-[13px] text-navy/50 leading-snug max-w-[260px]">The old way of managing content that just doesn't scale for creators</p>
             </div>
             <div className="flex flex-col gap-3.5">
               {withoutItems.map((item) => <CheckItem key={item} text={item} variant="cross" />)}
@@ -160,20 +150,20 @@ export default function GlowUpSection() {
             </div>
           </div>
           <div className="px-4 sm:px-6 pb-0">
-            <SmallPlants />
+            <SmallPlatforms />
           </div>
         </div>
 
-        {/* Right: With Caide */}
+        {/* Right: With Channl */}
         <div className="flex-1 rounded-2xl md:rounded-l-none relative flex flex-col border-2 md:border-l-0 border-navy/70 overflow-hidden" style={{ background: '#7ECABB', minHeight: '480px' }}>
           <div className="absolute top-4 right-4 z-10">
             <Sparkle size={44} color="#F5C418" />
           </div>
           <div className="px-6 sm:px-8 pt-8 pb-0 flex flex-col gap-5 flex-1 relative z-10">
-            <DalmatianAvatar />
+            <ContentIcon />
             <div>
-              <h3 className="font-heading font-extrabold text-[20px] md:text-[22px] text-navy mb-2">With Woofly</h3>
-              <p className="font-body text-[13px] text-navy/60 leading-snug max-w-[260px]">Everything you need to give your dog world-class care without the stress</p>
+              <h3 className="font-heading font-extrabold text-[20px] md:text-[22px] text-navy mb-2">With Channl</h3>
+              <p className="font-body text-[13px] text-navy/60 leading-snug max-w-[260px]">Everything you need to grow your audience across every platform without the stress</p>
             </div>
             <div className="flex flex-col gap-3.5">
               {withItems.map((item) => <CheckItem key={item} text={item} variant="check" />)}

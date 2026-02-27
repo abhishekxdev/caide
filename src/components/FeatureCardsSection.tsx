@@ -39,34 +39,34 @@ export default function FeatureCardsSection() {
         {/* Top row: 1 col mobile → 2 col md */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 
-          {/* Card 1: Effortless Campaign Management */}
+          {/* Card 1: Effortless Multi-Platform Scheduling */}
           <div className={`${cardBase} min-h-[300px] md:min-h-[360px] flex flex-col justify-end`}
             style={{ background: 'linear-gradient(180deg, #87C5EE 0%, #A8C8F0 45%, #C4BCEC 100%)' }}>
             <CloudsDecoration />
             <div className="relative z-10 px-7 pb-8 pt-24">
               <h3 className="font-heading font-extrabold text-[20px] md:text-[24px] leading-tight text-navy mb-3">
-                Effortless Care<br />Scheduling
+                Effortless Multi-Platform<br />Scheduling
               </h3>
               <p className="font-body text-[13px] leading-relaxed text-navy/70 max-w-[280px]">
-                From vet bookings and walker matching to automated reminders and health logs,
-                Woofly handles the complexity behind the scenes.
+                From automated post queuing and peak-time publishing to calendar views and
+                bulk scheduling, Channl handles the complexity behind the scenes.
               </p>
             </div>
           </div>
 
-          {/* Card 2: Enhanced ROI */}
+          {/* Card 2: 10x Your Output */}
           <div className={`${cardBase} min-h-[300px] md:min-h-[360px] flex flex-col`} style={{ background: '#F5C418' }}>
             <div className="px-7 pt-7 pb-2 z-10 relative">
               <h3 className="font-heading font-extrabold text-[20px] md:text-[22px] leading-tight text-navy mb-2">
-                More Time, Less Worry
+                10x Your Output,<br />Zero Extra Work
               </h3>
               <p className="font-body text-[13px] text-navy/70 leading-relaxed max-w-[240px]">
-                Woofly takes care of the annoying admin so you can focus on belly rubs, walkies,
-                and making memories with your dog.
+                One YouTube video or blog post becomes a full week of platform-specific
+                content — formatted, tone-matched, and ready to publish.
               </p>
             </div>
             <div className="flex-1 flex items-end justify-center pb-0 relative">
-              <img src="/walking-dog.svg" alt="Person walking a dog illustration"
+              <img src="/dalmatian-sit.svg" alt="Creator productivity illustration"
                 style={{ width: '100%', maxWidth: '300px', height: '200px', objectFit: 'contain', mixBlendMode: 'multiply' }} />
             </div>
           </div>
@@ -80,16 +80,16 @@ export default function FeatureCardsSection() {
           }} />
           <div className="relative z-10 flex flex-col gap-5 px-6 sm:px-10 py-8 md:py-10 md:w-[45%]">
             <h3 className="font-heading font-extrabold text-[24px] md:text-[30px] leading-tight text-navy">
-              Personalised,<br />Breed-Aware Plans
+              Analytics That<br />Actually Matter
             </h3>
             <p className="font-body text-[13px] md:text-[14px] text-navy/70 leading-relaxed max-w-[320px]">
-              Woofly studies every dog's breed, age, weight, and history to build care plans that
-              feel tailored — just like a top-performing vet would recommend.
+              Channl tracks engagement, reach, and click-through rates per platform and per
+              post — so you know exactly what content is working and double down on it.
             </p>
             <OffsetButton label="Book a demo" />
           </div>
           <div className="relative z-10 flex-1 flex items-end justify-center md:justify-end pr-0 overflow-hidden">
-            <img src="/workspace.svg" alt="Person working at desk with dog illustration"
+            <img src="/workspace.svg" alt="Analytics dashboard illustration"
               style={{ width: '100%', maxWidth: '480px', height: '220px', objectFit: 'contain', objectPosition: 'bottom right', mixBlendMode: 'multiply' }} />
           </div>
         </div>

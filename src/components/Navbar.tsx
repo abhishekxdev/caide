@@ -2,6 +2,16 @@ import { useState } from 'react';
 
 const links = ['Features', 'Pricing', 'Contact us'];
 
+function ChannlLogo({ size = 18 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M2 12 Q6 4 12 4 Q18 4 22 12 Q18 20 12 20 Q6 20 2 12Z" stroke="white" strokeWidth="2" fill="none" strokeLinejoin="round" />
+      <circle cx="12" cy="12" r="3" fill="white" />
+      <path d="M12 9 L12 4" stroke="white" strokeWidth="1.5" strokeLinecap="round" />
+    </svg>
+  );
+}
+
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -11,16 +21,9 @@ export default function Navbar() {
         {/* Logo */}
         <div className="flex items-center gap-2.5 shrink-0">
           <div className="w-8 h-8 bg-navy flex items-center justify-center rounded-full">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              {/* Paw print */}
-              <circle cx="9" cy="6" r="2.2" fill="white" />
-              <circle cx="15" cy="6" r="2.2" fill="white" />
-              <circle cx="5.5" cy="10.5" r="1.8" fill="white" />
-              <circle cx="18.5" cy="10.5" r="1.8" fill="white" />
-              <path d="M12 22c-4 0-7-2.5-7-6.5 0-2.5 1.5-4.5 4-5.5h6c2.5 1 4 3 4 5.5 0 4-3 6.5-7 6.5z" fill="white" />
-            </svg>
+            <ChannlLogo size={18} />
           </div>
-          <span className="font-heading font-700 text-xl text-navy tracking-tight">Woofly</span>
+          <span className="font-heading font-700 text-xl text-navy tracking-tight">Channl</span>
         </div>
 
         {/* Nav Links — desktop */}

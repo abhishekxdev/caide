@@ -1,13 +1,34 @@
 import { useState } from 'react';
 
 const faqs = [
-  { q: 'How is Woofly different from other pet care apps?', a: "Woofly works like a dedicated dog care concierge, handling everything from booking and scheduling to health tracking and professional vetting — while keeping you firmly in control. Unlike other apps, it requires no complex setup, and it's built to make expert-level dog care accessible to every owner." },
-  { q: 'How does Woofly find and vet dog care professionals?', a: 'Woofly scans multiple trusted sources to identify walkers, vets, and groomers near you. It enriches each profile with verified reviews, certifications, insurance status, and availability — before presenting only the best matches for your dog.' },
-  { q: "What if I'm not sure what care my dog needs?", a: "No problem. Woofly guides you through building a care plan based on your dog's breed, age, weight, and lifestyle. You can refine it over time as Woofly learns more about your pup's unique personality and preferences." },
-  { q: "How does Woofly ensure the safety of my dog?", a: 'Woofly follows strict vetting standards: background checks, insurance verification, first-aid certification checks, and GPS-tracked walks with live updates. Your dog\'s safety is always front of mind.' },
-  { q: 'Can I review and approve bookings before they\'re confirmed?', a: "Absolutely. Woofly shows you every booking detail before it's confirmed. You can approve, reschedule, or cancel any appointment. You're always in control of who cares for your dog." },
-  { q: 'Does Woofly integrate with my vet\'s system?', a: "Yes. Woofly connects with popular vet platforms and can store your dog's complete health history in one place. Vet notes, vaccination records, and appointment outcomes sync automatically so you never miss a detail." },
-  { q: 'Who is Woofly built for?', a: 'Woofly is built for busy dog owners, multi-dog households, and pet care businesses who want professional-grade dog management without juggling a dozen different apps or missing important health milestones.' },
+  {
+    q: 'How is Channl different from other scheduling tools?',
+    a: "Channl goes beyond scheduling. It's an AI-powered repurposing engine — you drop in a YouTube video or blog link, and it automatically generates platform-specific posts for X, Threads, and LinkedIn. Most tools just let you schedule. Channl creates the content too.",
+  },
+  {
+    q: 'Which content sources does Channl support?',
+    a: 'Channl currently supports YouTube videos, blog posts (any URL), and podcast transcripts. Simply paste a link and Channl fetches, analyses, and transforms the content into platform-ready posts in seconds.',
+  },
+  {
+    q: 'How does the AI know my voice and style?',
+    a: "Channl learns from your existing posts and the content you approve or edit. Over time it adapts to your tone, vocabulary, and posting patterns — getting sharper with every piece of content you run through it.",
+  },
+  {
+    q: 'Which platforms does Channl publish to?',
+    a: 'Channl currently supports X (Twitter), Threads, and LinkedIn. Each platform gets uniquely formatted content — X gets punchy threads, LinkedIn gets long-form professional posts, and Threads gets conversational bites.',
+  },
+  {
+    q: 'Can I review and edit posts before they go live?',
+    a: "Absolutely. Channl shows you every generated post before it's queued. You can edit text, swap images, adjust scheduling, or approve with one click. You're always in control of what goes out.",
+  },
+  {
+    q: 'How does scheduling and auto-publishing work?',
+    a: "Channl analyses your audience's engagement patterns and recommends optimal posting times per platform. You can auto-publish at those times or manually choose your schedule. Posts are queued in a drag-and-drop calendar for full visibility.",
+  },
+  {
+    q: 'Who is Channl built for?',
+    a: 'Channl is built for solo content creators, YouTubers, bloggers, podcasters, and small agencies who want to grow their social presence without spending hours every week repurposing the same content by hand.',
+  },
 ];
 
 function FAQItem({ question, answer, isOpen, onToggle }: { question: string; answer: string; isOpen: boolean; onToggle: () => void }) {
@@ -47,7 +68,7 @@ function ContactCard() {
       }} />
       <div className="relative z-10">
         <p className="font-heading font-extrabold text-[17px] text-navy mb-2">Still have questions?</p>
-        <p className="font-body text-[13px] text-navy/65 leading-snug mb-5">Our dog-loving team is just a click away — we're always happy to help.</p>
+        <p className="font-body text-[13px] text-navy/65 leading-snug mb-5">Our creator-focused team is just a click away — always happy to help.</p>
         <div className="relative w-fit" style={{ isolation: 'isolate' }}>
           <div className="absolute top-2 left-2 w-full h-full rounded-sm" style={{ background: '#9EA8DC', zIndex: 0 }} />
           <button className="relative flex items-center gap-2 bg-navy hover:bg-navy-light text-white font-body font-semibold text-[13px] px-5 py-2.5 rounded-sm transition-all duration-200 hover:-translate-y-0.5 hover:-translate-x-0.5 group" style={{ zIndex: 1 }}>
@@ -62,34 +83,7 @@ function ContactCard() {
   );
 }
 
-function SittingDog() {
-  return (
-    <svg viewBox="0 0 130 150" width="110" height="127" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Sitting dalmatian dog">
-      <ellipse cx="65" cy="105" rx="32" ry="28" fill="white" stroke="#1A103C" strokeWidth="2.2" />
-      <ellipse cx="55" cy="97" rx="8" ry="6" fill="#1A103C" />
-      <ellipse cx="76" cy="110" rx="6" ry="4.5" fill="#1A103C" />
-      <ellipse cx="62" cy="118" rx="4.5" ry="3.5" fill="#1A103C" />
-      <path d="M50 88 Q46 76 52 68" stroke="#1A103C" strokeWidth="2.2" fill="none" />
-      <path d="M60 86 Q58 74 58 68" stroke="#1A103C" strokeWidth="2.2" fill="none" />
-      <circle cx="55" cy="58" r="20" fill="white" stroke="#1A103C" strokeWidth="2.2" />
-      <ellipse cx="63" cy="52" rx="6" ry="4.5" fill="#1A103C" />
-      <path d="M38 50 Q28 52 26 64 Q28 74 38 70 Q46 66 46 54 Z" fill="white" stroke="#1A103C" strokeWidth="2" />
-      <path d="M72 50 Q80 52 80 62 Q78 70 70 68 Q66 62 68 52 Z" fill="white" stroke="#1A103C" strokeWidth="2" />
-      <circle cx="49" cy="56" r="3" fill="#1A103C" /><circle cx="61" cy="56" r="3" fill="#1A103C" />
-      <circle cx="49.9" cy="55" r="1" fill="white" /><circle cx="61.9" cy="55" r="1" fill="white" />
-      <ellipse cx="55" cy="65" rx="3.5" ry="2.5" fill="#1A103C" />
-      <path d="M51 68 Q55 72 59 68" stroke="#1A103C" strokeWidth="1.5" fill="none" strokeLinecap="round" />
-      <path d="M42 72 Q55 78 68 72" stroke="#3B82F6" strokeWidth="3" strokeLinecap="round" fill="none" />
-      <rect x="44" y="126" width="14" height="18" rx="7" fill="white" stroke="#1A103C" strokeWidth="2" />
-      <rect x="72" y="126" width="14" height="18" rx="7" fill="white" stroke="#1A103C" strokeWidth="2" />
-      <path d="M46 144 Q51 148 56 144" stroke="#1A103C" strokeWidth="1" fill="none" />
-      <path d="M74 144 Q79 148 84 144" stroke="#1A103C" strokeWidth="1" fill="none" />
-      <path d="M94 100 Q112 84 108 72" stroke="#1A103C" strokeWidth="4" strokeLinecap="round" fill="none" />
-    </svg>
-  );
-}
-
-function PlantGroup() {
+function PlatformGroup() {
   return (
     <svg viewBox="0 0 340 65" width="100%" height="65" style={{ maxWidth: '340px' }} fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <line x1="30" y1="62" x2="30" y2="40" stroke="#1A103C" strokeWidth="1.5" strokeLinecap="round" />
@@ -112,6 +106,31 @@ function PlantGroup() {
       <circle cx="278" cy="40" r="5" fill="none" stroke="#1A103C" strokeWidth="1.5" />
       <circle cx="232" cy="62" r="2" fill="#1A103C" />
       <circle cx="290" cy="62" r="2" fill="#1A103C" />
+    </svg>
+  );
+}
+
+function ContentCreatorDecor() {
+  return (
+    <svg viewBox="0 0 130 150" width="110" height="127" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Content creator illustration">
+      {/* Monitor */}
+      <rect x="20" y="20" width="90" height="70" rx="6" fill="white" stroke="#1A103C" strokeWidth="2.2" />
+      <rect x="20" y="20" width="90" height="12" rx="6" fill="#1A103C" />
+      <rect x="26" y="25" width="6" height="2" rx="1" fill="white" opacity="0.5" />
+      <rect x="34" y="25" width="6" height="2" rx="1" fill="white" opacity="0.5" />
+      {/* Screen content */}
+      <rect x="28" y="40" width="50" height="6" rx="2" fill="#DDD0FF" />
+      <rect x="28" y="50" width="38" height="4" rx="2" fill="#C4BCEC" opacity="0.7" />
+      <rect x="28" y="58" width="44" height="4" rx="2" fill="#C4BCEC" opacity="0.5" />
+      {/* Platform icons on screen */}
+      <rect x="82" y="40" width="18" height="18" rx="3" fill="#F5C418" />
+      <path d="M87 44l6 6-2-3 4-3" stroke="#1A103C" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+      {/* Stand */}
+      <line x1="65" y1="90" x2="65" y2="110" stroke="#1A103C" strokeWidth="3" strokeLinecap="round" />
+      <rect x="44" y="108" width="42" height="6" rx="3" fill="#1A103C" />
+      {/* Decorative signal waves */}
+      <path d="M112 35 Q118 42 118 50 Q118 58 112 65" stroke="#1A103C" strokeWidth="2" fill="none" strokeLinecap="round" opacity="0.4" />
+      <path d="M116 30 Q124 40 124 50 Q124 60 116 70" stroke="#1A103C" strokeWidth="1.5" fill="none" strokeLinecap="round" opacity="0.25" />
     </svg>
   );
 }
@@ -140,12 +159,12 @@ export default function FAQSection() {
         </div>
       </div>
 
-      {/* Dog + plants decoration */}
+      {/* Decoration */}
       <div className="flex justify-center items-end mt-12 md:mt-16">
-        <PlantGroup />
+        <PlatformGroup />
       </div>
       <div className="flex justify-center -mt-10 md:-mt-14">
-        <SittingDog />
+        <ContentCreatorDecor />
       </div>
     </section>
   );

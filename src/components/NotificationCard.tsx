@@ -6,9 +6,11 @@ interface NotificationCardProps {
 }
 
 const channelColors: Record<string, string> = {
-  Email: 'bg-blue-100 text-blue-700',
+  X: 'bg-gray-100 text-gray-800',
+  Threads: 'bg-gray-100 text-gray-700',
   LinkedIn: 'bg-sky-100 text-sky-700',
-  Calendar: 'bg-green-100 text-green-700',
+  Analytics: 'bg-green-100 text-green-700',
+  Scheduled: 'bg-lavender text-navy',
 };
 
 export default function NotificationCard({ type, message, channel }: NotificationCardProps) {
